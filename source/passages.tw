@@ -1,8 +1,11 @@
 :: Start
 This is the first passage in your game with just one variable called myVariable that has a value of $myVariable.  There are two passages in this template, and the other can be found [[here|Passage 2]]
 
-:: Passage 2
-And here we are!
+:: Passage 2 [gambler]
+And here we are! [[next | Child Perspective]]
 
-:: Child Perspective
-what is my dad doing? why is he sniffing some white stuff on the table
+:: Child Perspective [child]
+css tester child [[next | Spouse]]
+
+:: Spouse [spouse]
+css tester spouse

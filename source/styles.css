@@ -33,3 +33,21 @@ body {
 	background: green;
 }
 */
+
+.gambler{
+	background: rgb(86, 85, 87);
+	font-family:'Courier New', Courier, monospace;
+	color: white;
+}
+
+.spouse{
+	background: navy;
+	font-family: Garamond, 'Times New Roman', serif;
+	color: white;
+}
+
+.child{
+	background: lightblue;
+	font-family: 'Lucida Handwriting', 'Brush Script M7', cursive;
+	color: navy;
+}
