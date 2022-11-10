@@ -4,13 +4,13 @@ body {
 }
 */
 
-/* This class is specific to the text in the passages
-.passage {
-    border: 1px solid red;
-}
-*/
 
-/* This id is specific to the sidebar
+.passage {
+	font-size: 1.5em;
+}
+
+
+/*
 #ui-bar {
 	display: none;
 }
@@ -40,14 +40,29 @@ body {
 	color: white;
 }
 
+/* placeholders here for location-based bg changes
+
+.casino{
+	background-image: placeholder for poker chips asset;
+}
+
+.home{
+	background-image: kitchen;
+}
+
+.outside{
+	background-image: idk;
+}
+
+*/
 .spouse{
-	background: navy;
+	background: rgb(19, 19, 68);
 	font-family: Garamond, 'Times New Roman', serif;
 	color: white;
 }
 
 .child{
-	background: lightblue;
+	background: rgb(203, 236, 247);
 	font-family: 'Lucida Handwriting', 'Brush Script M7', cursive;
-	color: navy;
+	color: rgb(19, 19, 68);
 }
