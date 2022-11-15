@@ -4,7 +4,7 @@ What is your name?
 
 [[Continue.->Introduction]]
 
-:: Introduction
+:: Introduction [[gambler]]
 Hello, $name. You come back home after a long day of [[work.->Work]]
 
 Your son is still at the [[Boys and Girls Club.->Joined Club]]
