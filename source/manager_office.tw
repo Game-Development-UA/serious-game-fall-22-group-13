@@ -1,18 +1,14 @@
 :: Manager Office
-"I'm sorry to inform you $name, but business hasn't been all that great lately and the company
-has unfortunately decided to start cutting wages for all employees. This is something out of my
-control, and believe me it was a tough decision to make." He tells you.
-
-<<if $madAtManager is false>>[["Isn't there any way you can reconsider? My family desperately needs the money and they're
-relying on me".->Manager Says No]]<</if>>
-
+"I'm sorry to inform you $name, but business hasn't been all that great lately and the company has unfortunately decided to start cutting wages for all employees. This is something out of my control, and believe me it was a tough decision to make." He tells you.
+<<if $madAtManager is false>>
+[["Isn't there any way you can reconsider? My family desperately needs the money and they're relying on me".->Manager Says No]]
+<</if>>
 [["Screw you, I never liked working for you and you never treated me well in the first place".->Manager Says No]]
 
-[["Fine, whatever.".->Work]]
+[["Fine, whatever."->Work]]
 
 :: Manager Says No
 <<set $madAtManager to true>>
-"Unfortunately, this decision was made by the higher ups, and I had no say in it. I understand
-your situation, but I'm sorry to say that there is nothing I can do about it."
+"Unfortunately, this decision was made by the higher ups, and I had no say in it. I understand your situation, but I'm sorry to say that there is nothing I can do about it."
 
-[[Say something else.->Manager office]]
+[[Say something else.->Manager Office]]
