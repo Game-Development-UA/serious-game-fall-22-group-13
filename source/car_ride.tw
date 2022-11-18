@@ -27,13 +27,19 @@ The car is quite quiet with no one but you in it, and it's going to be a somewha
 
 :: Turn On Radio
 
-You reach to turn on the radio and $songSelection[Math.floor(Math.random()*10)] music starts playing.
+You reach to turn on the radio and $genre music starts playing.
+
 [[Change the music.->Change Radio Channel]]
 
-[[I love this song!.->Continue Driving]]
+[[I love this song!->Continue Driving]]
 
 :: Change Radio Channel
-You didn't like the previous channel's song selection, so you changed the channel and now $songSelection[Math.floor(Math.random()*10)] music starts playing.
+<<set $genre to $songSelection.random()>>
+You didn't like the previous channel's song selection, so you changed the channel and now $genre music starts playing.
+
+[[Change it again.->Change Radio Channel]]
+
+[[I love this song!->Continue Driving]]
 
 :: Continue Driving
 Now that you have some music playing in the background, the drive isn't so boring. You pass by a couple of exits before you look outside your window and see a brand new, flashing billboard.
@@ -41,3 +47,10 @@ Now that you have some music playing in the background, the drive isn't so borin
 [[I have to focus on the road!->Want To Look At Billboard]]
 
 [[What does it say?->Look At Billboard]]
+
+:: Almost At Club
+You're almost at the club now. You imagine how excited your son will be to see that you're the one picking him up as it doesn't happen often.
+
+<em>Looks like this is the exit!</em>
+
+[[Exit highway.->Arrive At Club]]

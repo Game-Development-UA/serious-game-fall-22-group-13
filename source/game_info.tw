@@ -12,7 +12,9 @@ Jackpot
 :: StoryInit
 <<set $balance to 1000>>
 <<set $madAtManager to false>>
-<<set $songSelection to ["Country", "Pop", "Hip-Hop", "Classical", "Rock", "Metal", "EDM", "Rap", "Jazz", "Reggaeton"]>>
+<<set $songSelection to ["country", "pop", "hip-hop", "classical", "rock", "metal", "EDM", "rap", "jazz"]>>
+<<set $song to 0>>
+<<set $genre to $songSelection.random()>>
 
 :: PassageFooter
 <<if passage() is not "Check Balance" and passage() is not "Start" and not tags().includes("flashback")>>\
@@ -22,4 +24,5 @@ Jackpot
 
 :: Check Balance
 You're curious as to how much your bank balance is, so you check you login to your phone and see that you currently have $balance dollars.
+
 <<return>>

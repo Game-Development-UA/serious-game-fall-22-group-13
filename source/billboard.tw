@@ -1,10 +1,24 @@
 :: Want To Look At Billboard
-The billboard was super flashy, I bet it was for something cool.
+<em>The billboard was super flashy, I bet it was for something cool.</em>
 
 [[What does it say?->Look At Billboard]]
 
 :: Look At Billboard
 You decide to look at the billboard, and it reads
 
-<strong>Rock River Casino
+<strong>Cross County Casino
 For those seeking Adventure!</strong>
+
+[[Oh hey that's cool, there's a casino close to home now!->First Casino]]
+
+[[I wonder if "Friend" wants to go some time?->Focus On The Road]]
+
+:: First Casino
+Before the Cross County Casino, the only other nearest casino was a 3-hour long drive. Now if you feel lucky and want to have some fun, it's only 30 minutes away!
+
+[[Get back to driving.->Almost At Club]]
+
+:: Focus On The Road
+<em>Oh what am I saying, I need to focus on driving first, I'll ask him later when I get back.</em>
+
+[[Continue.->Almost At Club]]
