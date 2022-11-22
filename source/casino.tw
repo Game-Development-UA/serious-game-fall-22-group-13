@@ -7,3 +7,61 @@
 
 :: Free Roulette
 Are you aware of how to play?
+
+[[Yes.->Play Roulette]]
+
+[[No.->Roulette Rules]]
+
+:: Roulette Rules
+In this game, we have simplified it for you where you only need to pick between the color Red or Black. If you guess correctly, you win, if not, you lose.
+
+[[Let's Play!->Play Roulette]]
+
+:: Play Roulette
+<<set $roulette to random(0, 11)>>
+So what will your pick be? [[Red->Guess Red]] or [[Black->Guess Black]]
+
+:: Guess Red
+<<if $roulette % 2 is 0>>You guessed right and win!<</if>>
+<<if $roulette % 2 is 1>> You guessed wrong and lose<</if>>
+[[Next->After Roulette]]
+
+:: Guess Black
+<<if $roulette % 2 is 1>>You guessed right and win!<</if>>
+<<if $roulette % 2 is 0>> You guessed wrong and lose<</if>>
+
+[[Next->After Roulette]]
+
+:: After Roulette
+This game was free this time around, but the next time you play, you will have to bet a certain amount of money and there's no guarantee that you will win it back, so be careful!
+
+Wow, would you look at the time, it looks like it's getting [[late.->Head Home]]
+
+:: Head Home
+"Man that was fun, we should do this more often!" I tell "friend".
+
+"It was alright, I guess man. I'm not a big fan of gambling honestly." he replies.
+
+"To each his own I guess, wanna join us for dinner tonight?" I ask.
+
+"Nah I gotta go back to my wife and kids, too. I can't just leave them." he replies.
+
+"Alright, yeah that makes sense. Let's [[head back->Go Home]] then."
+
+:: Go Home
+"I'm home!" I shout as I enter the door.
+
+"Dad! Welcome back!" "son" shouts at me as he's running at me at full speed.
+
+"Welcome back, honey. You're just in time for dinner." "wife" replies.
+
+"Great, [[I'm starving->Dinner Table]], sorry I couldn't help you out with dinner tonight."
+
+:: Dinner Table
+"... and then I played some Roulette and I won so much money off of it, it was amazing!" I say at the dinner table.
+
+"Wow, congratulations that's a lot of money." "wife" replies.
+
+"Now we can live a bit more luxuriously." I jokingly say.
+
+<em>I think I'm going to head there [[next weekend->Time Skip]] to win some more money!</em>

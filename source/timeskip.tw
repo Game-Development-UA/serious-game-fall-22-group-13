@@ -1,0 +1,68 @@
+:: Time Skip
+<<set $balance to 6000>>
+It's been a year since I started going to the casino. I've gone there pretty much every weekend, and I keep telling my wife that I'll make enough for us to [[win it all back.->Argument]]
+
+:: Argument
+"Honey, I keep telling you to stop going back there, it's hurting us more than helping" "wife" tells me.
+
+"Don't you understand, all I have to do is win it big once and all our worries will go away!" I try to explain.
+
+"No! Enough is enough, you're hardly ever home now because you spend more time at the casino than you do at home with me or "son"."
+
+"Ok? I'm trying to help our family out of our financial situation and all you ever do is complain. Don't you think it's hard for me too?" I yell while [[headed for the door.->Go To Casino]]
+
+:: Go To Casino
+<em>Welcome to Cross County Casino! How much would you like to bet?</em>
+
+<<if $balance >= 100>>[[$100->Bet 100]]<</if>>
+
+<<if $balance >= 200>>[[$200->Bet 200]]<</if>>
+
+<<if $balance >= 500>>[[$500->Bet 500]]<</if>>
+:: Bet 100
+<<set $bet to 100>>
+You have decided to bet $100
+
+[[Continue->Choose Game]]
+
+:: Bet 200
+<<set $bet to 200>>
+You have decided to bet $200
+
+[[Continue->Choose Game]]
+
+:: Bet 500
+<<set $bet to 500>>
+You have decided to bet $500
+
+[[Continue->Choose Game]]
+
+:: Choose Game
+<em>Which game would you like to play?</em>
+
+[[Roulette->Money Roulette]]
+
+[[Blackjack->Money Blackjack]]
+
+:: Money Roulette
+<<set $roulette to random(0, 11)>>
+You have decided to play Roulette.
+
+Which color will you guess?
+
+[[Red->Money Guess Red]] or [[Black->Money Guess Black]]
+
+:: Money Guess Red
+<<if $roulette % 2 is 0>>You guessed right and win! 
+Your balance has increased by $bet dollars! <<set $balance to $balance + $bet>><</if>>
+<<if $roulette % 2 is 1>> You guessed wrong and lose
+Your balance has decreased by $bet dollars<<set $balance to $balance - $bet>><</if>>
+[[Next->After Roulette]]
+
+:: Money Guess Black
+<<if $roulette % 2 is 1>>You guessed right and win!
+Your balance has increased by $bet dollars!<<set $balance to $balance + $bet>><</if>>
+<<if $roulette % 2 is 0>> You guessed wrong and lose
+Your balance has decreased by $bet dollars<<set $balance to $balance - $bet>><</if>>
+
+:: Money Blackjack
