@@ -1,49 +1,49 @@
 :: SpouseStart 
-    "Your name is <strong>Jamie</strong> and you are married to the [[love of your life. | Love]]"
-    "Tonight, you're making dinner, like usual. Your husband is late, like usual."
-    "Did he [[remember to get your son? | Remembered]]Or were [[you put on the spot again? | Deadbeat]]"
+    Your name is <strong>Jamie</strong> and you are married to the [[love of your life. | Love]]
+    Tonight, you're making dinner, like usual. Your husband is late, like usual.
+    Did he [[remember to get your son? | Remembered]]Or were [[you put on the spot again? | Deadbeat]]
 
 :: Love
-    "He has to be the love of your life. You've been married too long not to be." [[>>> | SpouseStart]]
+    He has to be the love of your life. You've been married too long not to be. [[>>> | SpouseStart]]
 
 :: Remembered
-    "He did, of course. But by the time you got home from work, he had already left again. 
+    He did, of course. But by the time you got home from work, he had already left again. 
     You would wonder where he is, but you think you already know.
-    [[>>> | SpouseCont]]"
+    [[>>> | SpouseCont]]
 
 :: Deadbeat
     <<set $deadbeat to true>>
-    "Of course not. You got a call at work from the after-school program, an hour after he was supposed to do it.
+    Of course not. You got a call at work from the after-school program, an hour after he was supposed to do it.
     You had to leave early again to pick him up yourself. 
-    [[Your boss wasn't happy, and neither were you. | SpouseCont]]"
+    [[Your boss wasn't happy, and neither were you. | SpouseCont]]
 
 :: SpouseCont
-    "The house feels eerie. Or maybe on edge is the better word. Or maybe it's not the house, it's just you.
+    The house feels eerie. Or maybe on edge is the better word. Or maybe it's not the house, it's just you.
     You hear the garbled audio from the TV faintly playing [[in the other room. | Child]]
     Your soup is still [[warming on the stove. | Soup]]
-    You think your [[husband should be home soon. | Return]]"
+    You think your [[husband should be home soon. | Return]]
 
 :: Child
     <<if $gonetotvroom>>
-        "He's fully engrossed in his TV show now. So much for homework. [[>>> | SpouseCont]]"
+        He's fully engrossed in his TV show now. So much for homework. [[>>> | SpouseCont]]
     <<else>>
         <<set $gonetotvroom to true>>
-        "Henry is sitting on the couch when you come in. He's been watching TV since you came home.
+        Henry is sitting on the couch when you come in. He's been watching TV since you came home.
         
         'Make sure you finish your homework,' you remind him. 'TV is only for kids who do their assignments on time.'
         
         Henry lets out a truly impressive sigh for an elementary schooler. 'Yes, <i>mom</i>,' he grumbles. 
-        As you return to the kitchen, you see that he reaches for his backpack on the end of the couch. [[>>> | SpouseCont]]"
+        As you return to the kitchen, you see that he reaches for his backpack on the end of the couch. [[>>> | SpouseCont]]
     <</if>>
 
 :: Soup
-    "It's chicken noodle tonight. The usual can concentrate, watered down to make the can stretch as long as possible.
-    You watch it hiss and bubble for a moment. It's probably almost done. [[>>> | SpouseCont]]"
+    It's chicken noodle tonight. The usual can concentrate, watered down to make the can stretch as long as possible.
+    You watch it hiss and bubble for a moment. It's probably almost done. [[>>> | SpouseCont]]
 
 :: Return
-    "You've just started plating the soup for you and Henry when you finally hear the front door creak open."
+    You've just started plating the soup for you and Henry when you finally hear the front door creak open.
     <<if $deadbeat>>
-        "Your eyes narrow. You don't know if you're really in the mood to talk to him right now."
+        Your eyes narrow. You don't know if you're really in the mood to talk to him right now.
     <</if>>
     "When he stumbles into the kitchen, haphazardly dropping his coat and hat on the dining chairs, 
     that little part of your heart that you thought had hit rock-bottom sinks even lower.
@@ -52,7 +52,16 @@
     
     <<if $deadbeat>>
     [["I can't <i>believe</i> you. | Argue"]]
-    <</if>>"
+    <</if>>
     [["Welcome home." | Fake Calm]]
-    [[Hand him a bowl. | Fake Peace]]
+    [[Hand him a bowl. | Bowl]]
+
+:: Fake Calm
+    He barely acknowledges you before making a beeline for the pot. You've been here before, too many times to count.
+
+:: Bowl
+    He doesn't look you in the eye as he takes the bowl from you with barely a muttered "Thanks".
+
+:: Argue
+    argument here
 
