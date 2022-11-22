@@ -3,14 +3,14 @@
 "ifid": "1F012455-6A83-4CCB-BCB1-49B9D77D4E03",
 "format": "SugarCube",
 "format-version": "2.30.0",
-"start": "Start"
+"start": "Argument"
 }
 
 :: StoryTitle
 Jackpot
 
 :: StoryInit
-<<set $balance to 1000>>
+<<set $balance to 40000>>
 <<set $madAtManager to false>>
 <<set $deadbeat to false>>
 <<set $gonetotvroom to false>>
@@ -25,6 +25,6 @@ Jackpot
 \<</if>>
 
 :: Check Balance
-You're curious as to how much your bank balance is, so you check you login to your phone and see that you currently have $balance dollars.
+You're curious as to how much your bank balance is, so you login to your phone and see that you currently have $balance dollars.
 
 <<return>>
