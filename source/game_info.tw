@@ -12,6 +12,8 @@ Jackpot
 :: StoryInit
 <<set $balance to 40000>>
 <<set $madAtManager to false>>
+<<set $deadbeat to false>>
+<<set $gonetotvroom to false>>
 <<set $songSelection to ["country", "pop", "hip-hop", "classical", "rock", "metal", "EDM", "rap", "jazz"]>>
 <<set $song to 0>>
 <<set $genre to $songSelection.random()>>
