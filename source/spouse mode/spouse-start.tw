@@ -19,8 +19,9 @@
 
 :: SpouseCont
     The house feels eerie. Or maybe on edge is the better word. Or maybe it's not the house, it's just you.
+    
     You hear the garbled audio from the TV faintly playing [[in the other room. | Child]]
-    Your soup is still [[warming on the stove. | Soup]]
+    The soup is still [[warming on the stove. | Soup]]
     You think your [[husband should be home soon. | Return]]
 
 :: Child
@@ -30,9 +31,9 @@
         <<set $gonetotvroom to true>>
         Henry is sitting on the couch when you come in. He's been watching TV since you came home.
         
-        'Make sure you finish your homework,' you remind him. 'TV is only for kids who do their assignments on time.'
+        "Make sure you finish your homework," you remind him. "TV is only for kids who do their assignments on time."
         
-        Henry lets out a truly impressive sigh for an elementary schooler. 'Yes, <i>mom</i>,' he grumbles. 
+        Henry lets out a truly impressive sigh for an elementary schooler. "Yes, <i>mom</i>," he grumbles. 
         As you return to the kitchen, you see that he reaches for his backpack on the end of the couch. [[>>> | SpouseCont]]
     <</if>>
 
@@ -51,7 +52,7 @@
     He went to the casino. Again.
     
     <<if $deadbeat>>
-    [["I can't <i>believe</i> you. | Argue"]]
+    [["I can't <i>believe</i> you." | Argue]]
     <</if>>
     [["Welcome home." | Fake Calm]]
     [[Hand him a bowl. | Bowl]]
@@ -63,5 +64,56 @@
     He doesn't look you in the eye as he takes the bowl from you with barely a muttered "Thanks".
 
 :: Argue
-    argument here
+    argument here [[>>> | Aftermath]]
 
+:: Aftermath
+    "Don't walk away from me!" you shout. It's a useless effort. 
+
+    <i>After all, when has he ever listened to you?</i>
+
+    You feel another headache building in the back of your skull. You almost never feel well, these days.
+    The simmering anger still bubbling in your gut certainly isn't helping things. 
+
+    The bowl in your hands feels cold now. You grip it tightly--too tightly. 
+    For just a second you feel the overwhelming urge to drop it. 
+    Throw it at the floor, the wall, smash it, break it, <i>anything to hear it shatter and watch it fly into a million tiny little slivers of violence crafted lovingly by your own hands--</i> 
+
+    And then the moment passes. You take a breath, and pick up Henry's bowl of lukewarm soup. 
+    
+    [[Is he still in the TV room? | Find]]
+
+:: Find
+    The TV is still playing, but Henry has long since abandoned the couch. 
+    <<if $gonetotvroom>>His school supplies are still strewn about the room.<</if>>
+
+    [[He must have gone to his room, then. | Room]]
+
+:: Room
+    You approach the door at the end of the hall. The [[old nametag| Nametag]] you and your husband made together when he was born still dangles in the center.
+    It's a bit crooked now, though.
+
+    [[Knock. | No Answer]]
+    [[Leave the bowl. | End Spouse Start]]
+
+:: Nametag
+    It's a clunky little thing, made of a hunk of wood and paint and stickers. 
+    
+    You remember making it, years ago now. The two of you impulse-bought a kit at the craft store, and spent the next hour at home playfighting over the stickers and colors to use.
+    [[It hadn't been serious then. | Room]]
+
+:: No Answer
+    You knock once, and then twice. There's some kind of shifting noise from beyond the door, but otherwise you get no response.
+
+    "Henry?" you try.
+
+    "...Don' wanna talk!" is what you finally get back. At least you know he's in there now.
+
+    And well, honestly, you don't really want to talk either.
+    It feels like every other day is another new, hard conversation that you have to have with him about why you can't do this or buy that or why Dad is never ever home now.
+    It's wearing you down, bit by bit. [[>>> | End Spouse Start]]
+
+:: End Spouse Start
+    "Okay," you say, setting down the bowl and spoon outside. "I'm leaving dinner right here. Make sure you have some."
+    You get another shuffling sound in response. Better than nothing.
+
+    You return to your own bowl in the kitchen, but it looks suddenly unappetizing.
