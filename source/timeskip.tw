@@ -57,12 +57,79 @@ Which color will you guess?
 Your balance has increased by $bet dollars! <<set $balance to $balance + $bet>><</if>>
 <<if $roulette % 2 is 1>> You guessed wrong and lose
 Your balance has decreased by $bet dollars<<set $balance to $balance - $bet>><</if>>
-[[Next->After Roulette]]
+[[Next->Play Again?]]
 
 :: Money Guess Black
 <<if $roulette % 2 is 1>>You guessed right and win!
 Your balance has increased by $bet dollars!<<set $balance to $balance + $bet>><</if>>
 <<if $roulette % 2 is 0>> You guessed wrong and lose
 Your balance has decreased by $bet dollars<<set $balance to $balance - $bet>><</if>>
+[[Next->Play Again?]]
 
 :: Money Blackjack
+<<set $blackjack to random(2,20)>>
+<<set $dealer to random(2, 20)>>
+You have decided to play Blackjack.
+
+You have $blackjack.
+
+The dealer has $dealer.
+
+[[Hit->Blackjack Hit]] or [[Stay->Blackjack Stay]]
+
+:: Play Again?
+Would you like to play again?
+
+[[I want to play again->Choose Game]]
+
+[[I want to change my bet->Go To Casino]]
+
+:: Blackjack Hit
+<<set $hit to random(1,10)>>
+<<set $blackjack to $blackjack + $hit>>
+You have decided to hit and got a $hit.
+
+Your total is now $blackjack.
+
+The dealer has $dealer
+
+<<if $blackjack > 21>>You have busted and lost.
+
+Your balance has decreased by $bet dollars<<set $balance to $balance - $bet>>
+
+[[Next->Play Again?]]<</if>>
+<<if $blackjack <= 21>>[[Hit-> Blackjack Hit]] or [[Stay->Blackjack Stay]]<</if>>
+
+:: Blackjack Stay
+The dealer has $dealer
+<<if $dealer >= 17>>
+<<if $blackjack > $dealer>>Your cards are higher than the dealer's so you win!
+Your balance has increased by $bet dollars<<set $balance to $balance + $bet>><</if>>
+<<if $blackjack < $dealer>>Your cards are lower than the dealer's so you lose.
+Your balance has decreased by $bet dollars<<set $balance to $balance - $bet>><</if>>
+<<if $blackjack == $dealer>>Both you and the dealer have the same total.
+Your balance has not changed<</if>>
+[[Next->Play Again?]]
+<</if>>
+<<if $dealer < 17>>
+[[Continue->Dealer Hit]]
+<</if>>
+
+:: Dealer Hit
+<<set $hit to random(1, 10)>>
+<<set $dealer to $dealer + $hit>>
+The dealer has hit and now has $dealer
+<<if $dealer > 22 && $dealer > 17>>The dealer has busted. You win!
+Your balance has increased by $bet dollars<<set $balance to $balance + $bet>><</if>>
+<<if $dealer >= 17 && $dealer <= 21>>>
+<<if $blackjack > $dealer>>Your cards are higher than the dealer's so you win!
+Your balance has increased by $bet dollars<<set $balance to $balance + $bet>><</if>>
+<<if $blackjack < $dealer>>Your cards are lower than the dealer's so you lose.
+Your balance has decreased by $bet dollars<<set $balance to $balance - $bet>><</if>>
+<<if $blackjack == $dealer>>Both you and the dealer have the same total.
+Your balance has not changed<</if>>
+[[Next->Play Again?]]
+<</if>>
+<<if $dealer < 17>>
+[[Continue->Dealer Hit]]
+<</if>>
