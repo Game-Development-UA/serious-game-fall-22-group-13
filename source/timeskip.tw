@@ -119,8 +119,9 @@ Your balance has not changed<</if>>
 <<set $hit to random(1, 10)>>
 <<set $dealer to $dealer + $hit>>
 The dealer has hit and now has $dealer
-<<if $dealer > 22 && $dealer > 17>>The dealer has busted. You win!
-Your balance has increased by $bet dollars<<set $balance to $balance + $bet>><</if>>
+<<if $dealer >= 22 && $dealer > 17>>The dealer has busted. You win!
+Your balance has increased by $bet dollars<<set $balance to $balance + $bet>>
+[[Next->Play Again?]]<</if>>
 <<if $dealer >= 17 && $dealer <= 21>>>
 <<if $blackjack > $dealer>>Your cards are higher than the dealer's so you win!
 Your balance has increased by $bet dollars<<set $balance to $balance + $bet>><</if>>

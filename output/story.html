@@ -100,7 +100,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://1F012455-6A83-4CCB-BCB1-49B9D77D4E03// --><tw-storydata name="Jackpot" startnode="62" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="1F012455-6A83-4CCB-BCB1-49B9D77D4E03" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* The body is everything displayed in the main text delivery area
+	<!-- UUID://1F012455-6A83-4CCB-BCB1-49B9D77D4E03// --><tw-storydata name="Jackpot" startnode="42" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="1F012455-6A83-4CCB-BCB1-49B9D77D4E03" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* The body is everything displayed in the main text delivery area
 body {
 	background: blue;
 }
@@ -369,17 +369,18 @@ No answer.
     Of course not. You got a call at work from the after-school program, an hour after he was supposed to do it.
     You had to leave early again to pick him up yourself. 
     [[Your boss wasn&#39;t happy, and neither were you. | SpouseCont]]</tw-passagedata><tw-passagedata pid="54" name="SpouseCont" tags="" position="475,725" size="100,100">The house feels eerie. Or maybe on edge is the better word. Or maybe it&#39;s not the house, it&#39;s just you.
+    
     You hear the garbled audio from the TV faintly playing [[in the other room. | Child]]
-    Your soup is still [[warming on the stove. | Soup]]
+    The soup is still [[warming on the stove. | Soup]]
     You think your [[husband should be home soon. | Return]]</tw-passagedata><tw-passagedata pid="55" name="Child" tags="" position="600,725" size="100,100">&lt;&lt;if $gonetotvroom&gt;&gt;
         He&#39;s fully engrossed in his TV show now. So much for homework. [[&gt;&gt;&gt; | SpouseCont]]
     &lt;&lt;else&gt;&gt;
         &lt;&lt;set $gonetotvroom to true&gt;&gt;
         Henry is sitting on the couch when you come in. He&#39;s been watching TV since you came home.
         
-        &#39;Make sure you finish your homework,&#39; you remind him. &#39;TV is only for kids who do their assignments on time.&#39;
+        &quot;Make sure you finish your homework,&quot; you remind him. &quot;TV is only for kids who do their assignments on time.&quot;
         
-        Henry lets out a truly impressive sigh for an elementary schooler. &#39;Yes, &lt;i&gt;mom&lt;/i&gt;,&#39; he grumbles. 
+        Henry lets out a truly impressive sigh for an elementary schooler. &quot;Yes, &lt;i&gt;mom&lt;/i&gt;,&quot; he grumbles. 
         As you return to the kitchen, you see that he reaches for his backpack on the end of the couch. [[&gt;&gt;&gt; | SpouseCont]]
     &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="56" name="Soup" tags="" position="725,725" size="100,100">It&#39;s chicken noodle tonight. The usual can concentrate, watered down to make the can stretch as long as possible.
     You watch it hiss and bubble for a moment. It&#39;s probably almost done. [[&gt;&gt;&gt; | SpouseCont]]</tw-passagedata><tw-passagedata pid="57" name="Return" tags="" position="850,725" size="100,100">You&#39;ve just started plating the soup for you and Henry when you finally hear the front door creak open.
@@ -392,49 +393,83 @@ No answer.
     He went to the casino. Again.
     
     &lt;&lt;if $deadbeat&gt;&gt;
-    [[&quot;I can&#39;t &lt;i&gt;believe&lt;/i&gt; you. | Argue&quot;]]
+    [[&quot;I can&#39;t &lt;i&gt;believe&lt;/i&gt; you.&quot; | Argue]]
     &lt;&lt;/if&gt;&gt;
     [[&quot;Welcome home.&quot; | Fake Calm]]
-    [[Hand him a bowl. | Bowl]]</tw-passagedata><tw-passagedata pid="58" name="Fake Calm" tags="" position="975,725" size="100,100">He barely acknowledges you before making a beeline for the pot. You&#39;ve been here before, too many times to count.</tw-passagedata><tw-passagedata pid="59" name="Bowl" tags="" position="1100,725" size="100,100">He doesn&#39;t look you in the eye as he takes the bowl from you with barely a muttered &quot;Thanks&quot;.</tw-passagedata><tw-passagedata pid="60" name="Argue" tags="" position="1225,725" size="100,100">argument here</tw-passagedata><tw-passagedata pid="61" name="Time Skip" tags="" position="100,850" size="100,100">&lt;&lt;set $balance to 6000&gt;&gt;
-It&#39;s been a year since I started going to the casino. I&#39;ve gone there pretty much every weekend, and I keep telling my wife that I&#39;ll make enough for us to [[win it all back.-&gt;Argument]]</tw-passagedata><tw-passagedata pid="62" name="Argument" tags="" position="225,850" size="100,100">&quot;Honey, I keep telling you to stop going back there, it&#39;s hurting us more than helping&quot; &quot;wife&quot; tells me.
+    [[Hand him a bowl. | Bowl]]</tw-passagedata><tw-passagedata pid="58" name="Fake Calm" tags="" position="975,725" size="100,100">He barely acknowledges you before making a beeline for the pot. You&#39;ve been here before, too many times to count.</tw-passagedata><tw-passagedata pid="59" name="Bowl" tags="" position="1100,725" size="100,100">He doesn&#39;t look you in the eye as he takes the bowl from you with barely a muttered &quot;Thanks&quot;.</tw-passagedata><tw-passagedata pid="60" name="Argue" tags="" position="1225,725" size="100,100">argument here [[&gt;&gt;&gt; | Aftermath]]</tw-passagedata><tw-passagedata pid="61" name="Aftermath" tags="" position="100,850" size="100,100">&quot;Don&#39;t walk away from me!&quot; you shout. It&#39;s a useless effort. 
+
+    &lt;i&gt;After all, when has he ever listened to you?&lt;/i&gt;
+
+    You feel another headache building in the back of your skull. You almost never feel well, these days.
+    The simmering anger still bubbling in your gut certainly isn&#39;t helping things. 
+
+    The bowl in your hands feels cold now. You grip it tightly--too tightly. 
+    For just a second you feel the overwhelming urge to drop it. 
+    Throw it at the floor, the wall, smash it, break it, &lt;i&gt;anything to hear it shatter and watch it fly into a million tiny little slivers of violence crafted lovingly by your own hands--&lt;/i&gt; 
+
+    And then the moment passes. You take a breath, and pick up Henry&#39;s bowl of lukewarm soup. 
+    
+    [[Is he still in the TV room? | Find]]</tw-passagedata><tw-passagedata pid="62" name="Find" tags="" position="225,850" size="100,100">The TV is still playing, but Henry has long since abandoned the couch. 
+    &lt;&lt;if $gonetotvroom&gt;&gt;His school supplies are still strewn about the room.&lt;&lt;/if&gt;&gt;
+
+    [[He must have gone to his room, then. | Room]]</tw-passagedata><tw-passagedata pid="63" name="Room" tags="" position="350,850" size="100,100">You approach the door at the end of the hall. The [[old nametag| Nametag]] you and your husband made together when he was born still dangles in the center.
+    It&#39;s a bit crooked now, though.
+
+    [[Knock. | No Answer]]
+    [[Leave the bowl. | End Spouse Start]]</tw-passagedata><tw-passagedata pid="64" name="Nametag" tags="" position="475,850" size="100,100">It&#39;s a clunky little thing, made of a hunk of wood and paint and stickers. 
+    
+    You remember making it, years ago now. The two of you impulse-bought a kit at the craft store, and spent the next hour at home playfighting over the stickers and colors to use.
+    [[It hadn&#39;t been serious then. | Room]]</tw-passagedata><tw-passagedata pid="65" name="No Answer" tags="" position="600,850" size="100,100">You knock once, and then twice. There&#39;s some kind of shifting noise from beyond the door, but otherwise you get no response.
+
+    &quot;Henry?&quot; you try.
+
+    &quot;...Don&#39; wanna talk!&quot; is what you finally get back. At least you know he&#39;s in there now.
+
+    And well, honestly, you don&#39;t really want to talk either.
+    It feels like every other day is another new, hard conversation that you have to have with him about why you can&#39;t do this or buy that or why Dad is never ever home now.
+    It&#39;s wearing you down, bit by bit. [[&gt;&gt;&gt; | End Spouse Start]]</tw-passagedata><tw-passagedata pid="66" name="End Spouse Start" tags="" position="725,850" size="100,100">&quot;Okay,&quot; you say, setting down the bowl and spoon outside. &quot;I&#39;m leaving dinner right here. Make sure you have some.&quot;
+    You get another shuffling sound in response. Better than nothing.
+
+    You return to your own bowl in the kitchen, but it looks suddenly unappetizing.</tw-passagedata><tw-passagedata pid="67" name="Time Skip" tags="" position="850,850" size="100,100">&lt;&lt;set $balance to 6000&gt;&gt;
+It&#39;s been a year since I started going to the casino. I&#39;ve gone there pretty much every weekend, and I keep telling my wife that I&#39;ll make enough for us to [[win it all back.-&gt;Argument]]</tw-passagedata><tw-passagedata pid="68" name="Argument" tags="" position="975,850" size="100,100">&quot;Honey, I keep telling you to stop going back there, it&#39;s hurting us more than helping&quot; &quot;wife&quot; tells me.
 
 &quot;Don&#39;t you understand, all I have to do is win it big once and all our worries will go away!&quot; I try to explain.
 
 &quot;No! Enough is enough, you&#39;re hardly ever home now because you spend more time at the casino than you do at home with me or &quot;son&quot;.&quot;
 
-&quot;Ok? I&#39;m trying to help our family out of our financial situation and all you ever do is complain. Don&#39;t you think it&#39;s hard for me too?&quot; I yell while [[headed for the door.-&gt;Go To Casino]]</tw-passagedata><tw-passagedata pid="63" name="Go To Casino" tags="" position="350,850" size="100,100">&lt;em&gt;Welcome to Cross County Casino! How much would you like to bet?&lt;/em&gt;
+&quot;Ok? I&#39;m trying to help our family out of our financial situation and all you ever do is complain. Don&#39;t you think it&#39;s hard for me too?&quot; I yell while [[headed for the door.-&gt;Go To Casino]]</tw-passagedata><tw-passagedata pid="69" name="Go To Casino" tags="" position="1100,850" size="100,100">&lt;em&gt;Welcome to Cross County Casino! How much would you like to bet?&lt;/em&gt;
 
 &lt;&lt;if $balance &gt;= 100&gt;&gt;[[$100-&gt;Bet 100]]&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if $balance &gt;= 200&gt;&gt;[[$200-&gt;Bet 200]]&lt;&lt;/if&gt;&gt;
 
-&lt;&lt;if $balance &gt;= 500&gt;&gt;[[$500-&gt;Bet 500]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="64" name="Bet 100" tags="" position="475,850" size="100,100">&lt;&lt;set $bet to 100&gt;&gt;
+&lt;&lt;if $balance &gt;= 500&gt;&gt;[[$500-&gt;Bet 500]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="70" name="Bet 100" tags="" position="1225,850" size="100,100">&lt;&lt;set $bet to 100&gt;&gt;
 You have decided to bet $100
 
-[[Continue-&gt;Choose Game]]</tw-passagedata><tw-passagedata pid="65" name="Bet 200" tags="" position="600,850" size="100,100">&lt;&lt;set $bet to 200&gt;&gt;
+[[Continue-&gt;Choose Game]]</tw-passagedata><tw-passagedata pid="71" name="Bet 200" tags="" position="100,975" size="100,100">&lt;&lt;set $bet to 200&gt;&gt;
 You have decided to bet $200
 
-[[Continue-&gt;Choose Game]]</tw-passagedata><tw-passagedata pid="66" name="Bet 500" tags="" position="725,850" size="100,100">&lt;&lt;set $bet to 500&gt;&gt;
+[[Continue-&gt;Choose Game]]</tw-passagedata><tw-passagedata pid="72" name="Bet 500" tags="" position="225,975" size="100,100">&lt;&lt;set $bet to 500&gt;&gt;
 You have decided to bet $500
 
-[[Continue-&gt;Choose Game]]</tw-passagedata><tw-passagedata pid="67" name="Choose Game" tags="" position="850,850" size="100,100">&lt;em&gt;Which game would you like to play?&lt;/em&gt;
+[[Continue-&gt;Choose Game]]</tw-passagedata><tw-passagedata pid="73" name="Choose Game" tags="" position="350,975" size="100,100">&lt;em&gt;Which game would you like to play?&lt;/em&gt;
 
 [[Roulette-&gt;Money Roulette]]
 
-[[Blackjack-&gt;Money Blackjack]]</tw-passagedata><tw-passagedata pid="68" name="Money Roulette" tags="" position="975,850" size="100,100">&lt;&lt;set $roulette to random(0, 11)&gt;&gt;
+[[Blackjack-&gt;Money Blackjack]]</tw-passagedata><tw-passagedata pid="74" name="Money Roulette" tags="" position="475,975" size="100,100">&lt;&lt;set $roulette to random(0, 11)&gt;&gt;
 You have decided to play Roulette.
 
 Which color will you guess?
 
-[[Red-&gt;Money Guess Red]] or [[Black-&gt;Money Guess Black]]</tw-passagedata><tw-passagedata pid="69" name="Money Guess Red" tags="" position="1100,850" size="100,100">&lt;&lt;if $roulette % 2 is 0&gt;&gt;You guessed right and win! 
+[[Red-&gt;Money Guess Red]] or [[Black-&gt;Money Guess Black]]</tw-passagedata><tw-passagedata pid="75" name="Money Guess Red" tags="" position="600,975" size="100,100">&lt;&lt;if $roulette % 2 is 0&gt;&gt;You guessed right and win! 
 Your balance has increased by $bet dollars! &lt;&lt;set $balance to $balance + $bet&gt;&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $roulette % 2 is 1&gt;&gt; You guessed wrong and lose
 Your balance has decreased by $bet dollars&lt;&lt;set $balance to $balance - $bet&gt;&gt;&lt;&lt;/if&gt;&gt;
-[[Next-&gt;Play Again?]]</tw-passagedata><tw-passagedata pid="70" name="Money Guess Black" tags="" position="1225,850" size="100,100">&lt;&lt;if $roulette % 2 is 1&gt;&gt;You guessed right and win!
+[[Next-&gt;Play Again?]]</tw-passagedata><tw-passagedata pid="76" name="Money Guess Black" tags="" position="725,975" size="100,100">&lt;&lt;if $roulette % 2 is 1&gt;&gt;You guessed right and win!
 Your balance has increased by $bet dollars!&lt;&lt;set $balance to $balance + $bet&gt;&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $roulette % 2 is 0&gt;&gt; You guessed wrong and lose
 Your balance has decreased by $bet dollars&lt;&lt;set $balance to $balance - $bet&gt;&gt;&lt;&lt;/if&gt;&gt;
-[[Next-&gt;Play Again?]]</tw-passagedata><tw-passagedata pid="71" name="Money Blackjack" tags="" position="100,975" size="100,100">&lt;&lt;set $blackjack to random(2,20)&gt;&gt;
+[[Next-&gt;Play Again?]]</tw-passagedata><tw-passagedata pid="77" name="Money Blackjack" tags="" position="850,975" size="100,100">&lt;&lt;set $blackjack to random(2,20)&gt;&gt;
 &lt;&lt;set $dealer to random(2, 20)&gt;&gt;
 You have decided to play Blackjack.
 
@@ -442,11 +477,11 @@ You have $blackjack.
 
 The dealer has $dealer.
 
-[[Hit-&gt;Blackjack Hit]] or [[Stay-&gt;Blackjack Stay]]</tw-passagedata><tw-passagedata pid="72" name="Play Again?" tags="" position="225,975" size="100,100">Would you like to play again?
+[[Hit-&gt;Blackjack Hit]] or [[Stay-&gt;Blackjack Stay]]</tw-passagedata><tw-passagedata pid="78" name="Play Again?" tags="" position="975,975" size="100,100">Would you like to play again?
 
 [[I want to play again-&gt;Choose Game]]
 
-[[I want to change my bet-&gt;Go To Casino]]</tw-passagedata><tw-passagedata pid="73" name="Blackjack Hit" tags="" position="350,975" size="100,100">&lt;&lt;set $hit to random(1,10)&gt;&gt;
+[[I want to change my bet-&gt;Go To Casino]]</tw-passagedata><tw-passagedata pid="79" name="Blackjack Hit" tags="" position="1100,975" size="100,100">&lt;&lt;set $hit to random(1,10)&gt;&gt;
 &lt;&lt;set $blackjack to $blackjack + $hit&gt;&gt;
 You have decided to hit and got a $hit.
 
@@ -459,7 +494,7 @@ The dealer has $dealer
 Your balance has decreased by $bet dollars&lt;&lt;set $balance to $balance - $bet&gt;&gt;
 
 [[Next-&gt;Play Again?]]&lt;&lt;/if&gt;&gt;
-&lt;&lt;if $blackjack &lt;= 21&gt;&gt;[[Hit-&gt; Blackjack Hit]] or [[Stay-&gt;Blackjack Stay]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="74" name="Blackjack Stay" tags="" position="475,975" size="100,100">The dealer has $dealer
+&lt;&lt;if $blackjack &lt;= 21&gt;&gt;[[Hit-&gt; Blackjack Hit]] or [[Stay-&gt;Blackjack Stay]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="80" name="Blackjack Stay" tags="" position="1225,975" size="100,100">The dealer has $dealer
 &lt;&lt;if $dealer &gt;= 17&gt;&gt;
 &lt;&lt;if $blackjack &gt; $dealer&gt;&gt;Your cards are higher than the dealer&#39;s so you win!
 Your balance has increased by $bet dollars&lt;&lt;set $balance to $balance + $bet&gt;&gt;&lt;&lt;/if&gt;&gt;
@@ -471,12 +506,13 @@ Your balance has not changed&lt;&lt;/if&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if $dealer &lt; 17&gt;&gt;
 [[Continue-&gt;Dealer Hit]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="75" name="Dealer Hit" tags="" position="600,975" size="100,100">&lt;&lt;set $hit to random(1, 10)&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="81" name="Dealer Hit" tags="" position="100,1100" size="100,100">&lt;&lt;set $hit to random(1, 10)&gt;&gt;
 &lt;&lt;set $dealer to $dealer + $hit&gt;&gt;
 The dealer has hit and now has $dealer
-&lt;&lt;if $dealer &gt; 22 &amp;&amp; $dealer &gt; 17&gt;&gt;The dealer has busted. You win!
-Your balance has increased by $bet dollars&lt;&lt;set $balance to $balance + $bet&gt;&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if $dealer &gt;= 17&gt;&gt;
+&lt;&lt;if $dealer &gt;= 22 &amp;&amp; $dealer &gt; 17&gt;&gt;The dealer has busted. You win!
+Your balance has increased by $bet dollars&lt;&lt;set $balance to $balance + $bet&gt;&gt;
+[[Next-&gt;Play Again?]]&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $dealer &gt;= 17 &amp;&amp; $dealer &lt;= 21&gt;&gt;&gt;
 &lt;&lt;if $blackjack &gt; $dealer&gt;&gt;Your cards are higher than the dealer&#39;s so you win!
 Your balance has increased by $bet dollars&lt;&lt;set $balance to $balance + $bet&gt;&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $blackjack &lt; $dealer&gt;&gt;Your cards are lower than the dealer&#39;s so you lose.
