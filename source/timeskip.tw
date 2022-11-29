@@ -1,20 +1,26 @@
 :: Time Skip
-<<set $balance to 3000>>
-It's been a year since I started going to the casino. I've gone there pretty much every weekend, and I keep telling my wife that I'll make enough for us to [[win it all back.->Argument]]
+<<set $balance to 2500>>
+It's been a year since you started going to the casino. You have gone there pretty much every weekend. You keep telling your wife that you will make enough for us to [[win it all back.->Argument]]
 
 :: Argument
-"Honey, I keep telling you to stop going back there, it's hurting us more than helping" Mary tells me.
+"Honey, I keep telling you to stop going back there! It's hurting us more than helping!" Mary tells you. 
 
-"Don't you understand, all I have to do is win it big once and all our worries will go away!" I try to explain.
+You're on the defensive now. <i>She doesn't get it.</i>
 
-"No! Enough is enough, you're hardly ever home now because you spend more time at the casino than you do at home with me or Jack."
+"Don't you understand? All I have to do is win it big once and all our worries will go away!" You explain. It's obvious, really.
 
-"Ok? I'm trying to help our family out of our financial situation and all you ever do is complain. Don't you think it's hard for me too?" I yell while headed for the door.
+"No! Enough is enough, you're hardly ever home now because you spend more time at the casino than you do at home with me or Jack." She looks mad, angrier than you've seen her before.
 
-[[Mary watches me go...->SpouseStart]]
+It's not helping you calm down. Instead, you feel your frustration mounting.
+
+"Ok? I'm trying to help our family out of our financial situation and all you ever do is complain! Don't you think it's hard for me too?!" You yell. You spin on your heel and storm towards the door.
+
+You'll show her. <i>You'll show everyone.</i>
+
+[[Mary watches you go.->SpouseStart]]
 
 :: Go To Casino
-<<if $gamecounter = 0>>You, $name, arrive at the casino. The argument is fresh in your mind, but you shove it away.<</if>>
+<<if $gamecounter == 0>>You, $name, arrive at the casino. The argument is fresh in your mind, but you shove it away.<</if>>
 <em>Welcome to Cross County Casino! How much would you like to bet?</em>
 
 <<if $balance >= 100>>[[$100->Bet 100]]<</if>>
@@ -200,4 +206,32 @@ Your balance has not changed<</if>>
             2/3
 
 :: Therapy End
+    You stop what you're doing. 
+
+    What <i>are</i> you doing? You meant to check your bank account, but you accidentally opened one of those photo memories. Now you're just staring.
+
+    It's a family photo. Well, it doesn't have you in it, since you took it. It has to be from a couple years ago at least. Mary is grinning widely and Jack--Jack is so small, still. He probably wasn't even in elementary school yet. He's smiling, too, a big toothy grin that makes you smile a little when you look at it.
+
+    When was the last time you saw Mary smile like that?
+
+    When was the last time you saw your <i>son</i> smile like that?
+
+    How long has it been? What have you been doing, all this time? What have you done to them?
+
+    And it's then that you realize. That this is your fault, and once you think that you realize you can't even deny it. They tried to tell you, but you wouldn't listen. Couldn't hear them, over your own addiction.
+
+    If nothing changes, you'll continue hurting them like this. You'll drive everyone you love into the ground, into an ugly twisted wreck of a home and a life and a love.
+
+    You dial a number on your phone. Someone you haven't spoken to in a while, not really since he stopped coming to the casino with you.
+
+    "Anat? ...
+    
+    ...I need help."
+
+    [[>>>->End 3]]
+
+:: End 3
+<strong>End 3: Help</strong> 
+
+            3/3
 

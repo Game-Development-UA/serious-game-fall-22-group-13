@@ -1,14 +1,17 @@
 :: SpouseStart 
     Your name is <strong>Mary</strong> and you are married to the [[love of your life. | Love]]
     Tonight, you're making dinner, like usual. Your husband is late, like usual.
-    Did he [[remember to get your son? | Remembered]]Or were [[you put on the spot again? | Deadbeat]]
+    Did he [[remember to get your son? | Remembered]] Or were [[you put on the spot again? | Deadbeat]]
 
 :: Love
-    He has to be the love of your life. You've been married too long not to be. [[>>> | SpouseStart]]
+    He has to be the love of your life. You've been married too long not to be. 
+    
+    [[>>> | SpouseStart]]
 
 :: Remembered
     He did, of course. But by the time you got home from work, he had already left again. 
     You would wonder where he is, but you think you already know.
+
     [[>>> | SpouseCont]]
 
 :: Deadbeat
@@ -26,7 +29,9 @@
 
 :: Child
     <<if $gonetotvroom>>
-        He's fully engrossed in his TV show now. So much for homework. [[>>> | SpouseCont]]
+        He's fully engrossed in his TV show now. So much for homework.
+        
+         [[>>> | SpouseCont]]
     <<else>>
         <<set $gonetotvroom to true>>
         Jack is sitting on the couch when you come in. He's been watching TV since you came home.
@@ -34,20 +39,23 @@
         "Make sure you finish your homework," you remind him. "TV is only for kids who do their assignments on time."
         
         Jack lets out a truly impressive sigh for an elementary schooler. "Yes, <i>mom</i>," he grumbles. 
-        As you return to the kitchen, you see that he reaches for his backpack on the end of the couch. [[>>> | SpouseCont]]
+        As you return to the kitchen, you see that he reaches for his backpack on the end of the couch.
+        
+         [[>>> | SpouseCont]]
     <</if>>
 
 :: Soup
     It's chicken noodle tonight. The usual can concentrate, watered down to make the can stretch as long as possible.
-    You watch it hiss and bubble for a moment. It's probably almost done. [[>>> | SpouseCont]]
+    You watch it hiss and bubble for a moment. It's probably almost done. 
+    
+    [[>>> | SpouseCont]]
 
 :: Return
     You've just started plating the soup for you and Jack when you finally hear the front door creak open.
     <<if $deadbeat>>
         Your eyes narrow. You don't know if you're really in the mood to talk to him right now.
     <</if>>
-    "When he stumbles into the kitchen, haphazardly dropping his coat and hat on the dining chairs, 
-    that little part of your heart that you thought had hit rock-bottom sinks even lower.
+    When he stumbles into the kitchen, haphazardly dropping his coat and hat on the dining chairs, that little part of your heart that you thought had hit rock-bottom sinks even lower.
     
     He went to the casino. Again.
     
@@ -83,7 +91,9 @@
     "Don't you think it's hard for me too?!"
     
     Before you can say anything, he storms towards the door and slams it on his way out. 
-    You're left alone in the kitchen, watching his back. [[>>> | Aftermath]]
+    You're left alone in the kitchen, watching his back. 
+    
+    [[>>> | Aftermath]]
 
 :: Aftermath
     "Don't walk away from me!" you shout. It's a useless effort. 
@@ -129,7 +139,9 @@
 
     And well, honestly, you don't really want to talk either.
     It feels like every other day is another new, hard conversation that you have to have with him about why you can't do this or buy that or why Dad is never ever home now.
-    It's wearing you down, bit by bit. [[>>> | End Spouse Start]]
+    It's wearing you down, bit by bit. 
+    
+    [[>>> | End Spouse Start]]
 
 :: End Spouse Start
     "Okay," you say, setting down the bowl and spoon outside. "I'm leaving dinner right here. Make sure you have some."
