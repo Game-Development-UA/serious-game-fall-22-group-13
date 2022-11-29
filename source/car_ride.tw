@@ -3,7 +3,7 @@ You leave your house, closing and locking the door behind you. You take a couple
 
 How thoughtful.
 
-[[Walk to car.->Approach Car]]
+[[Walk to car->Approach Car]]
 
 :: Approach Car
 You approach your car and immediately take note of how dirty it looks on the oustide.
@@ -12,24 +12,25 @@ You approach your car and immediately take note of how dirty it looks on the ous
 
 You guys usually wash the car at home over the weekend because it's cheaper than doing it at a car wash, but lately you've just been so busy even on weekends that you haven't had time to think about the car.
 
-[[Proceed inside car.->Start Up The Car]]
+[[Get inside car->Start Up The Car]]
 
 :: Start Up The Car
 <em>VROOOOOM!</em>
+
 Your car engine starts and you proceed to the highway in the direction of the Boys and Girls Club.
 
-[[Continue.->In The Car]]
+[[>>>->In The Car]]
 
 :: In The Car
 The car is quite quiet with no one but you in it, and it's going to be a somewhat long drive, so why not put on some music?
 
-[[Let's put on some music.->Turn On Radio]]
+[[Let's put on some music->Turn On Radio]]
 
 :: Turn On Radio
 
 You reach to turn on the radio and $genre music starts playing.
 
-[[Change the music.->Change Radio Channel]]
+[[Change the music->Change Radio Channel]]
 
 [[I love this song!->Continue Driving]]
 
@@ -37,7 +38,7 @@ You reach to turn on the radio and $genre music starts playing.
 <<set $genre to $songSelection.random()>>
 You didn't like the previous channel's song selection, so you changed the channel and now $genre music starts playing.
 
-[[Change it again.->Change Radio Channel]]
+[[Change it again->Change Radio Channel]]
 
 [[I love this song!->Continue Driving]]
 
@@ -53,4 +54,4 @@ You're almost at the club now. You imagine how excited your son will be to see t
 
 <em>Looks like this is the exit!</em>
 
-[[Exit highway.->Arrive At Club]]
+[[Leave highway->Arrive At Club]]

@@ -16,41 +16,41 @@ You remember that you guys had turkey and mashed potatoes for dinner last night,
 No worries, [[we'll be back soon anyway.->Arrive At Club]]</em>
 
 :: Screw The Manager
-<em>I can't believe we're getting a pay cut like that. Doesn't he understand that I <strong>need</strong> the money to support my family? He was just saying whatever to try to calm me down, [[but that's never worked on me.->Arrive At Club]]</em>
+<em>I can't believe we're getting a pay cut like that. Doesn't he understand that I <strong>need</strong> the money to support my family? He was just saying whatever to try to calm me down, [[but I could see right through him.->Arrive At Club]]</em>
 
-[[Whatever.->Think About Casino]]
+[[Whatever, who cares->Think About Casino]]
 
 :: Think About Casino
 <em>Oh yeah! Cross County Casino opened up and I should probably hit up some friends over the weekend or something and we can go have some fun!</em>
 
-[[Continue.->Kid Gets Out]]
+[[>>>->Kid Gets Out]]
 
 :: Kid Gets Out
 "DAD!" you hear as you turn over and see a crowd of kids all pushing and shoving to exit a single door.
 
 "Hey, what's up tiger? Have a good time at camp today?" you ask.
 
-"Yea! We played a lot like we always do and they gave us cake as a snack today!"
+"Yeah! We played a lot like we always do and they gave us cake as a snack today!"
 
 [["Wow! That sounds yummy, I'm jealous!"->Start To Head Home]]
 
 [["I think we should go to Cross County Casino over the weekend"->He's Underage]]
 
 :: He's Underage
-""Let's go to Cross-" you realize your talking to your son and stop yourself.
+""Let's go to Cross-" you realize you're talking to your son and stop yourself.
 
 "Cross what?" he asks.
 
-[[Ah nevermind, I think I'm just a little tired.->Excuse To Son]]
+[[Ah nevermind, I think I'm just a little tired->Excuse To Son]]
 
 :: Excuse To Son
 "Oh okay dad."
 
-[[Continue.->Start To Head Home]]
+[[>>>->Start To Head Home]]
 
 :: Start To Head Home
 "Let's head back now! I bet mom is going to be home soon and start cooking dinner and we can help." You exclaim.
 
-"Yea!"
+"Yeah!"
 
 [[Start driving home->Back At Home]]

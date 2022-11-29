@@ -8,9 +8,9 @@
 :: Free Roulette
 Are you aware of how to play?
 
-[[Yes.->Play Roulette]]
+[[Yes, I'm a pro->Play Roulette]]
 
-[[No.->Roulette Rules]]
+[[No, what are the rules?->Roulette Rules]]
 
 :: Roulette Rules
 In this game, we have simplified it for you where you only need to pick between the color Red or Black. If you guess correctly, you win, if not, you lose.

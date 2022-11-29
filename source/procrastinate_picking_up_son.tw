@@ -1,11 +1,11 @@
 :: You Don't Have Time
 On second thought, maybe now would be a good time to start heading over.
 
-[[Go back.->Look At Time]]
+[[>>>->Look At Time]]
 
 :: Wife Doesn't Got This
 "Honey, can you pick "son" up tonight?"
 
 No answer.
 
-[[Maybe she's busy out running some errands.->Look At Time]]
+<em>[[Maybe she's busy out running some errands->Look At Time]]</em>
