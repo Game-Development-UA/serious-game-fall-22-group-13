@@ -1,5 +1,5 @@
 :: SpouseStart 
-    Your name is <strong>Jamie</strong> and you are married to the [[love of your life. | Love]]
+    Your name is <strong>Mary</strong> and you are married to the [[love of your life. | Love]]
     Tonight, you're making dinner, like usual. Your husband is late, like usual.
     Did he [[remember to get your son? | Remembered]]Or were [[you put on the spot again? | Deadbeat]]
 
@@ -29,11 +29,11 @@
         He's fully engrossed in his TV show now. So much for homework. [[>>> | SpouseCont]]
     <<else>>
         <<set $gonetotvroom to true>>
-        Henry is sitting on the couch when you come in. He's been watching TV since you came home.
+        Jack is sitting on the couch when you come in. He's been watching TV since you came home.
         
         "Make sure you finish your homework," you remind him. "TV is only for kids who do their assignments on time."
         
-        Henry lets out a truly impressive sigh for an elementary schooler. "Yes, <i>mom</i>," he grumbles. 
+        Jack lets out a truly impressive sigh for an elementary schooler. "Yes, <i>mom</i>," he grumbles. 
         As you return to the kitchen, you see that he reaches for his backpack on the end of the couch. [[>>> | SpouseCont]]
     <</if>>
 
@@ -42,7 +42,7 @@
     You watch it hiss and bubble for a moment. It's probably almost done. [[>>> | SpouseCont]]
 
 :: Return
-    You've just started plating the soup for you and Henry when you finally hear the front door creak open.
+    You've just started plating the soup for you and Jack when you finally hear the front door creak open.
     <<if $deadbeat>>
         Your eyes narrow. You don't know if you're really in the mood to talk to him right now.
     <</if>>
@@ -60,11 +60,30 @@
 :: Fake Calm
     He barely acknowledges you before making a beeline for the pot. You've been here before, too many times to count.
 
+    "Honey, I keep telling you to stop going back there," you start. Trying to be gentle, like coaxing out a stray cat. 
+    "It's hurting us more than helping."
+
+    He looks at you strangely, and you wonder if that might have been [[the wrong thing to say. | Argue]]
+
 :: Bowl
     He doesn't look you in the eye as he takes the bowl from you with barely a muttered "Thanks".
 
+    "Honey, I keep telling you to stop going back there," you start. It feels like talking to a brick wall. 
+    "It's hurting us more than helping."
+
+    He looks at you strangely, and you wonder if that might have been [[the wrong thing to say. | Argue]]
+
+
 :: Argue
-    argument here [[>>> | Aftermath]]
+    "Don't you understand?!" he snaps. You flinch back. "All I have to do is win it big once and all our worries will go away!" 
+
+    "No!" You're tired of this, of hearing the same thing day in and day out. "Enough is enough! You're hardly ever home now because you spend more time at the casino than you do at home with me or Jack!"
+
+    "I'm trying to help our family out of our financial situation and all you ever do is complain." your husband growls. Your breathing start to pick up speed.
+    "Don't you think it's hard for me too?!"
+    
+    Before you can say anything, he storms towards the door and slams it on his way out. 
+    You're left alone in the kitchen, watching his back. [[>>> | Aftermath]]
 
 :: Aftermath
     "Don't walk away from me!" you shout. It's a useless effort. 
@@ -78,12 +97,12 @@
     For just a second you feel the overwhelming urge to drop it. 
     Throw it at the floor, the wall, smash it, break it, <i>anything to hear it shatter and watch it fly into a million tiny little slivers of violence crafted lovingly by your own hands--</i> 
 
-    And then the moment passes. You take a breath, and pick up Henry's bowl of lukewarm soup. 
+    And then the moment passes. You take a breath, and pick up Jack's bowl of lukewarm soup. 
     
     [[Is he still in the TV room? | Find]]
 
 :: Find
-    The TV is still playing, but Henry has long since abandoned the couch. 
+    The TV is still playing, but Jack has long since abandoned the couch. 
     <<if $gonetotvroom>>His school supplies are still strewn about the room.<</if>>
 
     [[He must have gone to his room, then. | Room]]
@@ -104,7 +123,7 @@
 :: No Answer
     You knock once, and then twice. There's some kind of shifting noise from beyond the door, but otherwise you get no response.
 
-    "Henry?" you try.
+    "Jack?" you try.
 
     "...Don' wanna talk!" is what you finally get back. At least you know he's in there now.
 
@@ -117,3 +136,12 @@
     You get another shuffling sound in response. Better than nothing.
 
     You return to your own bowl in the kitchen, but it looks suddenly unappetizing.
+
+    Instead, you sink into the dining chair next to it. All of the anger and emotion you had been so full of earlier is gone, 
+    now, and you almost wish you still had it because this kind of emptiness is worse.
+
+    You're stuck. You've been stuck for years, and no one's coming to help you.
+
+    You're so, so alone.
+
+    [[>>> | ]]
