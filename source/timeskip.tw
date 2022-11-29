@@ -1,17 +1,20 @@
 :: Time Skip
-<<set $balance to 6000>>
+<<set $balance to 3000>>
 It's been a year since I started going to the casino. I've gone there pretty much every weekend, and I keep telling my wife that I'll make enough for us to [[win it all back.->Argument]]
 
 :: Argument
-"Honey, I keep telling you to stop going back there, it's hurting us more than helping" "wife" tells me.
+"Honey, I keep telling you to stop going back there, it's hurting us more than helping" Mary tells me.
 
 "Don't you understand, all I have to do is win it big once and all our worries will go away!" I try to explain.
 
-"No! Enough is enough, you're hardly ever home now because you spend more time at the casino than you do at home with me or "son"."
+"No! Enough is enough, you're hardly ever home now because you spend more time at the casino than you do at home with me or Jack."
 
-"Ok? I'm trying to help our family out of our financial situation and all you ever do is complain. Don't you think it's hard for me too?" I yell while [[headed for the door.->Go To Casino]]
+"Ok? I'm trying to help our family out of our financial situation and all you ever do is complain. Don't you think it's hard for me too?" I yell while headed for the door.
+
+[[Mary watches me go...->SpouseStart]]
 
 :: Go To Casino
+<<if $gamecounter = 0>>You, $name, arrive at the casino. The argument is fresh in your mind, but you shove it away.<</if>>
 <em>Welcome to Cross County Casino! How much would you like to bet?</em>
 
 <<if $balance >= 100>>[[$100->Bet 100]]<</if>>
@@ -19,6 +22,12 @@ It's been a year since I started going to the casino. I've gone there pretty muc
 <<if $balance >= 200>>[[$200->Bet 200]]<</if>>
 
 <<if $balance >= 500>>[[$500->Bet 500]]<</if>>
+
+
+
+<<if $gamecounter >= 3>>[[Leave.->Therapy End]]<</if>>
+
+
 :: Bet 100
 <<set $bet to 100>>
 You have decided to bet $100
@@ -40,11 +49,15 @@ You have decided to bet $500
 :: Choose Game
 <em>Which game would you like to play?</em>
 
-[[Roulette->Money Roulette]]
+<<if $gamecounter >= 10>>
+    [[You keep playing.->Infinite End]]
+<<else>>
+    [[Roulette->Money Roulette]]
 
-[[Blackjack->Money Blackjack]]
-
+    [[Blackjack->Money Blackjack]]
+<</if>>
 :: Money Roulette
+<<set $gamecounter to $gamecounter + 1>>
 <<set $roulette to random(0, 11)>>
 You have decided to play Roulette.
 
@@ -67,6 +80,7 @@ Your balance has decreased by $bet dollars<<set $balance to $balance - $bet>><</
 [[Next->Play Again?]]
 
 :: Money Blackjack
+<<set $gamecounter to $gamecounter + 1>>
 <<set $blackjack to random(2,20)>>
 <<set $dealer to random(2, 20)>>
 You have decided to play Blackjack.
@@ -79,10 +93,14 @@ The dealer has $dealer.
 
 :: Play Again?
 Would you like to play again?
+<<if $balance <= 100>>
+    [[You are out of money. | Broke End]]
+    <<else>>
+        [[I want to play again->Choose Game]]
+        
+        [[I want to change my bet->Go To Casino]]
+<</if>>
 
-[[I want to play again->Choose Game]]
-
-[[I want to change my bet->Go To Casino]]
 
 :: Blackjack Hit
 <<set $hit to random(1,10)>>
@@ -134,3 +152,52 @@ Your balance has not changed<</if>>
 <<if $dealer < 17>>
 [[Continue->Dealer Hit]]
 <</if>>
+
+:: Broke End
+    That's it. You're done. You bet against the house and you lost. 
+
+    It's kind of a blur, whatever happens after that. You find yourself outside. The night air is freezing, even through your jacket.
+
+    You recall, faintly, the argument you had with Mary earlier. You wonder if she's going to laugh at you now that she's been proven right.
+
+    Probably not. She doesn't do a lot of laughing these days.
+
+    [[>>>-> Broke End 2]]
+
+:: Broke End 2
+    What do you do now? How can you face your family again? At the moment you can't even really bring yourself to care. 
+    You've never felt so defeated. So hopeless.
+
+    You tilt your head up to the sky, as if it has the answers hidden away somewhere. 
+
+    The moon shines down coldly on you, and you realize for the first time how alone you really are.
+
+    [[>>>->End 1]]
+
+:: End 1
+    <strong>End 1: The Inevitable</strong> 
+
+            1/3
+
+:: Infinite End
+    You lose yourself in the game. The endless cycle of winning and losing and winning again and losing again pulls you in deeper than it ever has before.
+    Finally, you can forget about your problems and your marriage and your small, sad life.
+
+    You lose track of time. 
+    
+    Mary doesn't understand. She can't. <em>You</em> know how close you are. 
+    Every spin, every play moves you just a little closer the prize just out of your reach. And right now, you think you're almost there.
+
+    She'll have to eat those words, when you win.
+
+    You go in to play again.
+
+    [[>>>->End 2]]
+
+:: End 2
+    <strong>End 2: Replay</strong> 
+
+            2/3
+
+:: Therapy End
+

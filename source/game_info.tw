@@ -17,6 +17,7 @@ Jackpot
 <<set $songSelection to ["country", "pop", "hip-hop", "classical", "rock", "metal", "EDM", "rap", "jazz"]>>
 <<set $song to 0>>
 <<set $genre to $songSelection.random()>>
+<<set $gamecounter to 0>>
 
 :: PassageFooter
 <<if passage() is not "Check Balance" and passage() is not "Start" and not tags().includes("flashback")>>\
