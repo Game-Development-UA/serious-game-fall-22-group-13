@@ -30,7 +30,7 @@ No worries, [[we'll be back soon anyway.->Arrive At Club]]</em>
 
 "Hey, what's up tiger? Have a good time at camp today?" you ask.
 
-"Yeah! We played a lot like we always do and they gave us cake as a snack today!"
+"Yeah! We played a lot like we always do and they gave us cake as a snack today!" Jack tells you, grinning.
 
 [["Wow! That sounds yummy, I'm jealous!"->Start To Head Home]]
 
@@ -44,7 +44,7 @@ No worries, [[we'll be back soon anyway.->Arrive At Club]]</em>
 [[Ah nevermind, I think I'm just a little tired->Excuse To Son]]
 
 :: Excuse To Son
-"Oh okay dad."
+"Oh...okay dad." 
 
 [[>>>->Start To Head Home]]
 
