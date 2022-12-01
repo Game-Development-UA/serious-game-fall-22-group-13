@@ -208,6 +208,18 @@ body {
  	border-radius: 4px;
   	padding: 5px;
   	width: 400px;
+}
+.dinner{
+	background: rgb(72, 109, 255);
+	color: white;
+	font-family: 'Raleway',sans-serif;
+	font-weight: 500;
+}
+.dinner img{
+	border: 1px solid #ddd;
+ 	border-radius: 4px;
+  	padding: 5px;
+  	width: 200px;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">/* Stow the sidebar initially
 config.ui.stowBarInitially = true;
 */
@@ -257,9 +269,10 @@ No worries, [[we&#39;ll be back soon anyway.-&gt;Arrive At Club]]&lt;/em&gt;</tw
 Your wife&#39;s face pops out from the corner.
 &quot;Oh, you guys are home!&quot; She then heads back into the kitchen to continue cooking.
 
-[[Stealth Mission: Failed, we&#39;ll get &#39;em next time.-&gt;Wife Welcomes You Back]]</tw-passagedata><tw-passagedata pid="13" name="Talk About Dinner" tags="" position="350,225" size="100,100">&quot;If you don&#39;t mind I would appreciate it, but I&#39;m almost done anyways.&quot;
+[[Stealth Mission: Failed, we&#39;ll get &#39;em next time.-&gt;Wife Welcomes You Back]]</tw-passagedata><tw-passagedata pid="13" name="Talk About Dinner" tags="dinner" position="350,225" size="100,100">&quot;If you don&#39;t mind I would appreciate it, but I&#39;m almost done anyways.&quot;
 
-[[On my way!-&gt;Help With Dinner]]</tw-passagedata><tw-passagedata pid="14" name="Help With Dinner" tags="" position="475,225" size="100,100">You go over into the kitchen to help your wife with dinner. &quot;Hey, did you know they opened a casino near here recently? I saw an ad for it on my way from picking up &quot;son&quot;.&quot; you ask.
+[[On my way!-&gt;Help With Dinner]]</tw-passagedata><tw-passagedata pid="14" name="Help With Dinner" tags="dinner" position="475,225" size="100,100">&lt;img src=&quot;media/dinnerhelp.jpg&quot;&gt;
+You go over into the kitchen to help your wife with dinner. &quot;Hey, did you know they opened a casino near here recently? I saw an ad for it on my way from picking up &quot;son&quot;.&quot; you ask.
 
 &quot;Really? That&#39;s the first time I&#39;ve heard about it&quot; she replies.
 
@@ -317,16 +330,21 @@ You didn&#39;t like the previous channel&#39;s song selection, so you changed th
 
 &quot;I was thinking of just taking it easy and playing some roulette.&quot; &quot;friend&quot; says.
 
-&quot;Sure, let&#39;s head to that table then.&quot; The two of you head off to play some [[roulette.-&gt;Free Roulette]]</tw-passagedata><tw-passagedata pid="28" name="Free Roulette" tags="casino" position="975,350" size="100,100">Are you aware of how to play?
+&quot;Sure, let&#39;s head to that table then.&quot; The two of you head off to play some [[roulette.-&gt;Free Roulette]]</tw-passagedata><tw-passagedata pid="28" name="Free Roulette" tags="casino" position="975,350" size="100,100">&lt;img src=&quot;media/boss.jpeg&quot;&gt;
+Are you aware of how to play?
 
 [[Yes, I&#39;m a pro-&gt;Play Roulette]]
 
-[[No, what are the rules?-&gt;Roulette Rules]]</tw-passagedata><tw-passagedata pid="29" name="Roulette Rules" tags="casino" position="1100,350" size="100,100">In this game, we have simplified it for you where you only need to pick between the color Red or Black. If you guess correctly, you win, if not, you lose.
+[[No, what are the rules?-&gt;Roulette Rules]]</tw-passagedata><tw-passagedata pid="29" name="Roulette Rules" tags="casino" position="1100,350" size="100,100">&lt;img src=&quot;media/boss.jpeg&quot;&gt;
+In this game, we have simplified it for you where you only need to pick between the color Red or Black. If you guess correctly, you win, if not, you lose.
 
-[[Let&#39;s Play!-&gt;Play Roulette]]</tw-passagedata><tw-passagedata pid="30" name="Play Roulette" tags="casino" position="1225,350" size="100,100">&lt;&lt;set $roulette to random(0, 11)&gt;&gt;
-So what will your pick be? [[Red-&gt;Guess Red]] or [[Black-&gt;Guess Black]]</tw-passagedata><tw-passagedata pid="31" name="Guess Red" tags="casino" position="100,475" size="100,100">&lt;&lt;if $roulette % 2 is 0&gt;&gt;You guessed right and win!&lt;&lt;/if&gt;&gt;
+[[Let&#39;s Play!-&gt;Play Roulette]]</tw-passagedata><tw-passagedata pid="30" name="Play Roulette" tags="casino" position="1225,350" size="100,100">&lt;img src=&quot;media/boss.jpeg&quot;&gt;
+&lt;&lt;set $roulette to random(0, 11)&gt;&gt;
+So what will your pick be? [[Red-&gt;Guess Red]] or [[Black-&gt;Guess Black]]</tw-passagedata><tw-passagedata pid="31" name="Guess Red" tags="casino" position="100,475" size="100,100">&lt;img src=&quot;media/boss.jpeg&quot;&gt;
+&lt;&lt;if $roulette % 2 is 0&gt;&gt;You guessed right and win!&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $roulette % 2 is 1&gt;&gt; You guessed wrong and lose&lt;&lt;/if&gt;&gt;
-[[Next-&gt;After Roulette]]</tw-passagedata><tw-passagedata pid="32" name="Guess Black" tags="casino" position="225,475" size="100,100">&lt;&lt;if $roulette % 2 is 1&gt;&gt;You guessed right and win!&lt;&lt;/if&gt;&gt;
+[[Next-&gt;After Roulette]]</tw-passagedata><tw-passagedata pid="32" name="Guess Black" tags="casino" position="225,475" size="100,100">&lt;img src=&quot;media/boss.jpeg&quot;&gt;
+&lt;&lt;if $roulette % 2 is 1&gt;&gt;You guessed right and win!&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $roulette % 2 is 0&gt;&gt; You guessed wrong and lose&lt;&lt;/if&gt;&gt;
 
 [[Next-&gt;After Roulette]]</tw-passagedata><tw-passagedata pid="33" name="After Roulette" tags="casino" position="350,475" size="100,100">This game was free this time around, but the next time you play, you will have to bet a certain amount of money and there&#39;s no guarantee that you will win it back, so be careful!
@@ -345,7 +363,8 @@ Wow, would you look at the time, it looks like it&#39;s getting [[late.-&gt;Head
 
 &quot;Welcome back, honey. You&#39;re just in time for dinner.&quot; &quot;wife&quot; replies.
 
-&quot;Great, [[I&#39;m starving-&gt;Dinner Table]], sorry I couldn&#39;t help you out with dinner tonight.&quot;</tw-passagedata><tw-passagedata pid="36" name="Dinner Table" tags="" position="725,475" size="100,100">&quot;... and then I played some Roulette and I won so much money off of it, it was amazing!&quot; I say at the dinner table.
+&quot;Great, [[I&#39;m starving-&gt;Dinner Table]], sorry I couldn&#39;t help you out with dinner tonight.&quot;</tw-passagedata><tw-passagedata pid="36" name="Dinner Table" tags="dinner" position="725,475" size="100,100">&lt;img src=&quot;media/dinner.jpg&quot;&gt;
+&quot;... and then I played some Roulette and I won so much money off of it, it was amazing!&quot; I say at the dinner table.
 
 &quot;Wow, congratulations that&#39;s a lot of money.&quot; &quot;wife&quot; replies.
 
@@ -373,8 +392,7 @@ Wow, would you look at the time, it looks like it&#39;s getting [[late.-&gt;Head
 [[&quot;Fine, whatever&quot;-&gt;Work]]</tw-passagedata><tw-passagedata pid="41" name="Manager Says No" tags="flashback" position="100,600" size="100,100">&lt;&lt;set $madAtManager to true&gt;&gt;
 &quot;Unfortunately, this decision was made by the higher ups, and I had no say in it. I understand your situation, but I&#39;m sorry to say that there is nothing I can do about it.&quot;
 
-[[Say something else-&gt;Manager Office]]</tw-passagedata><tw-passagedata pid="42" name="Start" tags="casino" position="225,600" size="100,100">&lt;img src=&quot;media/roullete.gif&quot;&gt;
-What is your name: &lt;&lt;textbox &quot;$name&quot; &quot;&quot;&gt;&gt;
+[[Say something else-&gt;Manager Office]]</tw-passagedata><tw-passagedata pid="42" name="Start" tags="" position="225,600" size="100,100">What is your name: &lt;&lt;textbox &quot;$name&quot; &quot;&quot;&gt;&gt;
 
 [[&gt;&gt;&gt;-&gt;Introduction]]</tw-passagedata><tw-passagedata pid="43" name="Introduction" tags="flashback" position="350,600" size="100,100">&lt;img src=&quot;media/flashback.jpg&quot;&gt;
 Hello, $name. You come back home after a long day of [[work.-&gt;Work]]

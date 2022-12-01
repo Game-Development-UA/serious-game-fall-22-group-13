@@ -1,8 +1,8 @@
 :: Casino Time [casino]
 
-"Hey, "friend" this place is pretty cool, what should we start with first?" you ask "friend".
+"Hey, Anat! This place is pretty cool, what should we start with first?" you ask Anat.
 
-"I was thinking of just taking it easy and playing some roulette." "friend" says.
+"I was thinking of just taking it easy and playing some roulette." Anat says.
 
 "Sure, let's head to that table then." The two of you head off to play some [[roulette.->Free Roulette]]
 
@@ -44,31 +44,31 @@ This game was free this time around, but the next time you play, you will have t
 Wow, would you look at the time, it looks like it's getting [[late.->Head Home]]
 
 :: Head Home
-"Man that was fun, we should do this more often!" I tell "friend".
+"Man that was fun, we should do this more often!" you tell Anat.
 
 "It was alright, I guess man. I'm not a big fan of gambling honestly." he replies.
 
-"To each his own I guess, wanna join us for dinner tonight?" I ask.
+"To each his own I guess, wanna join us for dinner tonight?" you ask.
 
 "Nah I gotta go back to my wife and kids, too. I can't just leave them." he replies.
 
 "Alright, yeah that makes sense. Let's [[head back->Go Home]] then."
 
 :: Go Home
-"I'm home!" I shout as I enter the door.
+"I'm home!" you shout as you enter the door.
 
-"Dad! Welcome back!" "son" shouts at me as he's running at me at full speed.
+"Dad! Welcome back!" Jack shouts at you. You hear rapid little footsteps, and he bursts from around the corner, running at you at full speed.
 
-"Welcome back, honey. You're just in time for dinner." "wife" replies.
+"Welcome back, honey. You're just in time for dinner." Mary replies.
 
 "Great, [[I'm starving->Dinner Table]], sorry I couldn't help you out with dinner tonight."
 
 :: Dinner Table [dinner]
 <img src="media/dinner.jpg">
-"... and then I played some Roulette and I won so much money off of it, it was amazing!" I say at the dinner table.
+"... and then I played some Roulette and I won so much money off of it, it was amazing!" you say at the dinner table.
 
-"Wow, congratulations that's a lot of money." "wife" replies.
+"Wow, congratulations that's a lot of money." Mary replies.
 
-"Now we can live a bit more luxuriously." I jokingly say.
+"Now we can live a bit more luxuriously." you jokingly say.
 
 <em>I think I'm going to head there [[next weekend->Time Skip]] to win some more money!</em>
