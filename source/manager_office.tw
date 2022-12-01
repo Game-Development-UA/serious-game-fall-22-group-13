@@ -1,4 +1,5 @@
 :: Manager Office [flashback]
+<img src="media/boss.jpeg">
 "I'm sorry to inform you $name, but business hasn't been all that great lately and the company has unfortunately decided to start cutting wages for all employees. This is something out of my control, and believe me it was a tough decision to make." He tells you.
 <<if $madAtManager is false>>
 [["Isn't there any way you can reconsider? My family desperately needs the money and they're relying on me"->Manager Says No]]

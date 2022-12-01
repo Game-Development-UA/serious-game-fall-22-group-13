@@ -1,38 +1,44 @@
-:: Casino Time
+:: Casino Time [casino]
+
 "Hey, "friend" this place is pretty cool, what should we start with first?" you ask "friend".
 
 "I was thinking of just taking it easy and playing some roulette." "friend" says.
 
 "Sure, let's head to that table then." The two of you head off to play some [[roulette.->Free Roulette]]
 
-:: Free Roulette
+:: Free Roulette [casino]
+<img src="media/boss.jpeg">
 Are you aware of how to play?
 
 [[Yes, I'm a pro->Play Roulette]]
 
 [[No, what are the rules?->Roulette Rules]]
 
-:: Roulette Rules
+:: Roulette Rules [casino]
+<img src="media/boss.jpeg">
 In this game, we have simplified it for you where you only need to pick between the color Red or Black. If you guess correctly, you win, if not, you lose.
 
 [[Let's Play!->Play Roulette]]
 
-:: Play Roulette
+:: Play Roulette [casino]
+<img src="media/boss.jpeg">
 <<set $roulette to random(0, 11)>>
 So what will your pick be? [[Red->Guess Red]] or [[Black->Guess Black]]
 
-:: Guess Red
+:: Guess Red [casino]
+<img src="media/boss.jpeg">
 <<if $roulette % 2 is 0>>You guessed right and win!<</if>>
 <<if $roulette % 2 is 1>> You guessed wrong and lose<</if>>
 [[Next->After Roulette]]
 
-:: Guess Black
+:: Guess Black [casino]
+<img src="media/boss.jpeg">
 <<if $roulette % 2 is 1>>You guessed right and win!<</if>>
 <<if $roulette % 2 is 0>> You guessed wrong and lose<</if>>
 
 [[Next->After Roulette]]
 
-:: After Roulette
+:: After Roulette [casino]
 This game was free this time around, but the next time you play, you will have to bet a certain amount of money and there's no guarantee that you will win it back, so be careful!
 
 Wow, would you look at the time, it looks like it's getting [[late.->Head Home]]
@@ -57,7 +63,8 @@ Wow, would you look at the time, it looks like it's getting [[late.->Head Home]]
 
 "Great, [[I'm starving->Dinner Table]], sorry I couldn't help you out with dinner tonight."
 
-:: Dinner Table
+:: Dinner Table [dinner]
+<img src="media/dinner.jpg">
 "... and then I played some Roulette and I won so much money off of it, it was amazing!" I say at the dinner table.
 
 "Wow, congratulations that's a lot of money." "wife" replies.
