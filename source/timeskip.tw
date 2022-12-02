@@ -1,5 +1,8 @@
 :: Time Skip
-<<set $balance to 2500>>
+<<if $balance > 40000>>
+    <<set $balance to 3000>>
+    <<else>><<set $balance to 2500>>
+<</if>>
 It's been a year since you started going to the casino. You have gone there pretty much every weekend. You keep telling your wife that you will make enough for us to [[win it all back.->Argument]]
 
 :: Argument
