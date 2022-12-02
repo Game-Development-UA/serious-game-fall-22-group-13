@@ -1,3 +1,6 @@
+:: StoryInit
+<<cacheaudio "clock" "media/clock.mp3">> 
+
 :: Start 
 What is your name: <<textbox "$name" "">>
 
@@ -28,6 +31,8 @@ Ever since you got that new job at Whole Foods, neither you nor your wife Mary h
 [[>>>->Snapback]]
 
 :: Look At Time
+<img src="media/Clock.gif">
+<<audio clock play>>
 You take a peek at your clock and it reads 12:47 as it has for the past few weeks.
 
 <em>That's right, our clock is broken. I should try fixing it some time or getting
