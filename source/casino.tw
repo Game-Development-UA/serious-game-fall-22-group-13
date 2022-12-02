@@ -15,24 +15,24 @@ Are you aware of how to play?
 [[No, what are the rules?->Roulette Rules]]
 
 :: Roulette Rules [casino]
-<img src="media/boss.jpeg">
+<img src="media/roullete.gif">
 In this game, we have simplified it for you where you only need to pick between the color Red or Black. If you guess correctly, you win, if not, you lose.
 
 [[Let's Play!->Play Roulette]]
 
 :: Play Roulette [casino]
-<img src="media/boss.jpeg">
+<img src="media/roullete.gif">
 <<set $roulette to random(0, 11)>>
 So what will your pick be? [[Red->Guess Red]] or [[Black->Guess Black]]
 
 :: Guess Red [casino]
-<img src="media/boss.jpeg">
+<img src="media/roullete.gif">
 <<if $roulette % 2 is 0>>You guessed right and win!<</if>>
 <<if $roulette % 2 is 1>> You guessed wrong and lose<</if>>
 [[Next->After Roulette]]
 
 :: Guess Black [casino]
-<img src="media/boss.jpeg">
+<img src="media/roullete.gif">
 <<if $roulette % 2 is 1>>You guessed right and win!<</if>>
 <<if $roulette % 2 is 0>> You guessed wrong and lose<</if>>
 
