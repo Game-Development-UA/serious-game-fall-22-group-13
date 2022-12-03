@@ -1,14 +1,41 @@
 :: Manager Office [flashback]
+<img src="media/boss.jpeg">
+You're called into the back office during a lull at work. Your store manager, Brian Something-or-other, stands behind his desk.
+He doesn't look very enthused, and you don't feel particularly excited to find out what he has to say.
+
 "I'm sorry to inform you $name, but business hasn't been all that great lately and the company has unfortunately decided to start cutting wages for all employees. This is something out of my control, and believe me it was a tough decision to make." He tells you.
 <<if $madAtManager is false>>
-[["Isn't there any way you can reconsider? My family desperately needs the money and they're relying on me"->Manager Says No]]
+[["Isn't there any way you can reconsider? My family desperately needs the money..."->Empathy]]
 <</if>>
-[["Screw you, I never liked working for you and you never treated me well in the first place"->Manager Says No]]
+[["Screw you, I never liked working for you and you never treated me well in the first place"->Anger]]
 
-[["Fine, whatever"->Work]]
+[["Fine, whatever."->Work]]
 
-:: Manager Says No [flashback]
-<<set $madAtManager to true>>
-"Unfortunately, this decision was made by the higher ups, and I had no say in it. I understand your situation, but I'm sorry to say that there is nothing I can do about it."
+:: Empathy [flashback]
+    Your pleading causes Brian to look away, clicking a pen for a moment while he stares anywhere but you.
 
-[[Say something else->Manager Office]]
+    "Unfortunately, this decision was made by the higher ups, and I had no say in it," he finally says. "I understand your situation, but I'm sorry to say that there is nothing I can do about it."
+
+    "But," he continues, just before you attempt to make your case again, "You have been working exceptionally hard this month. <i>Just this once</i>, I think you are eligible for the employee of the month bonus."
+
+    You stare for a moment, before thanking him profusely. The monthly bonus is small, but it's better than nothing at all. He looks away again.
+
+    "I hope you put it to good use," Brian nods. "Now, you're still on the clock."
+
+    You return to work, not quite happy, but a little more hopeful then when you started the comversation. When you get your next paycheck, true to his word, the monthly bonus is there.
+
+    <<set $balance to $balance + 500>>
+
+    [[>>> | Work]]
+
+:: Anger
+    <<set $madAtManager to true>>
+    The manager glares at you. Any empathy he might have been feeling for you is probably gone now. 
+    Still, it felt good to get that off your chest. This job <i>sucks</i>.
+
+    "You're lucky I can't fire you for that," he says in a low voice. "But you're on thin ice. Get out."
+
+    You have no other choice but to leave.
+
+    [[>>> | Work]]
+

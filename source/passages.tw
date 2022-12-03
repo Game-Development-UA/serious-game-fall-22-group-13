@@ -1,9 +1,13 @@
-:: Start
+:: StoryInit
+<<cacheaudio "clock" "media/clock.mp3">> 
+
+:: Start 
 What is your name: <<textbox "$name" "">>
 
 [[>>>->Introduction]]
 
-:: Introduction [flashback]
+:: Introduction [flashback] 
+<img src="media/flashback.jpg">
 Hello, $name. You come back home after a long day of [[work.->Work]]
 
 Your son is still at the [[Boys and Girls Club.->Joined Club]]
@@ -11,6 +15,7 @@ Your son is still at the [[Boys and Girls Club.->Joined Club]]
 [[What time is it?->Look At Time]]
 
 :: Work [flashback]
+<img src="media/grocerybagger.jpg">
 You work as a grocery bagger at Whole Foods. It was going to be just like any ordinary day except during your lunch break, your manager called you into his [[office.->Manager Office]]
 
 As if that wasn't already enough, to make matters worse your train was delayed for an [[hour.->Snapback]]
@@ -21,11 +26,13 @@ You hear a <strong>THUD</strong> from outside and snap back to reality.
 [[Continue.->Introduction]]
 
 :: Joined Club [flashback]
-Ever since you got that new job at Whole Foods, neither you nor your wife have been able to pick up your son on time at school, so you started looking for after school options. You both agreed on sending him to the Boys and Girls Club because it was cheap and convenient, and your son wanted to go there in the first place.
+Ever since you got that new job at Whole Foods, neither you nor your wife Mary have been able to pick up your son on time at school, so you started looking for after school options. You both agreed on sending him to the Boys and Girls Club because it was cheap and convenient, and your son wanted to go there in the first place.
 
 [[>>>->Snapback]]
 
 :: Look At Time
+<img src="media/Clock.gif">
+<<audio clock play>>
 You take a peek at your clock and it reads 12:47 as it has for the past few weeks.
 
 <em>That's right, our clock is broken. I should try fixing it some time or getting

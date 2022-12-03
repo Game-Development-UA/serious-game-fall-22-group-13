@@ -3,11 +3,32 @@ body {
 	background: blue;
 }
 */
-
+body {
+	background: #fff4a3;
+}
 
 .passage {
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	font-weight: 400;
+	
+	color: chocolate;
 	font-size: 1.5em;
+	line-height: 24px;
+	max-width: 600px;
+	justify-content: center;
+	margin: auto;
+	width:100%;
+	border: 3px solid rgb(146, 98, 21);
+	padding: 10px;
+	background: #fff4a3;
 }
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+
 
 
 /*
@@ -56,6 +77,17 @@ body {
 }
 
 */
+.casino img{
+	border: 1px solid #ddd;
+ 	border-radius: 4px;
+  	padding: 5px;
+  	width: 200px;
+}
+.casino{
+	background-color: crimson;
+	color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 .spouse{
 	background: rgb(19, 19, 68);
 	background-image: linear-gradient(to top right, rgb(19, 19, 68), rgb(59, 59, 121) );
@@ -67,4 +99,27 @@ body {
 	background: rgb(203, 236, 247);
 	font-family: 'Lucida Handwriting', 'Brush Script M7', cursive;
 	color: rgb(19, 19, 68);
+}
+
+.flashback img{
+	border: 1px solid #ddd;
+ 	border-radius: 4px;
+  	padding: 5px;
+  	width: 400px;
+}
+.dinner{
+	background: rgb(72, 109, 255);
+	color: white;
+	font-family: 'Raleway',sans-serif;
+	font-weight: 500;
+}
+.clock img{
+	padding: 5px;
+  	width: 200px;
+}
+.dinner img{
+	border: 1px solid #ddd;
+ 	border-radius: 4px;
+  	padding: 5px;
+  	width: 200px;
 }
