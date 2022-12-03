@@ -73,16 +73,20 @@ Which color will you guess?
 
 :: Money Guess Red
 <<if $roulette % 2 is 0>>You guessed right and win! 
-Your balance has increased by $bet dollars! <<set $balance to $balance + $bet>><</if>>
+Your balance has increased by $bet dollars!<<audio "win_sound" play>><<set $balance to $balance + $bet>><</if>>
 <<if $roulette % 2 is 1>> You guessed wrong and lose
-Your balance has decreased by $bet dollars<<set $balance to $balance - $bet>><</if>>
+Your balance has decreased by $bet dollars<<audio "lose_sound" play>><<set $balance to $balance - $bet>><</if>>
+You now have $balance dollars
+
 [[Next->Play Again?]]
 
 :: Money Guess Black
 <<if $roulette % 2 is 1>>You guessed right and win!
-Your balance has increased by $bet dollars!<<set $balance to $balance + $bet>><</if>>
+Your balance has increased by $bet dollars!<<audio "win_sound" play>><<set $balance to $balance + $bet>><</if>>
 <<if $roulette % 2 is 0>> You guessed wrong and lose
-Your balance has decreased by $bet dollars<<set $balance to $balance - $bet>><</if>>
+Your balance has decreased by $bet dollars<<audio "lose_sound" play>><<set $balance to $balance - $bet>><</if>>
+You now have $balance dollars
+
 [[Next->Play Again?]]
 
 :: Money Blackjack
@@ -118,8 +122,9 @@ Your total is now $blackjack.
 The dealer has $dealer
 
 <<if $blackjack > 21>>You have busted and lost.
-
+<<audio "lose_sound" play>>
 Your balance has decreased by $bet dollars<<set $balance to $balance - $bet>>
+You now have $balance dollars
 
 [[Next->Play Again?]]<</if>>
 <<if $blackjack <= 21>>[[Hit-> Blackjack Hit]] or [[Stay->Blackjack Stay]]<</if>>
@@ -128,11 +133,13 @@ Your balance has decreased by $bet dollars<<set $balance to $balance - $bet>>
 The dealer has $dealer
 <<if $dealer >= 17>>
 <<if $blackjack > $dealer>>Your cards are higher than the dealer's so you win!
-Your balance has increased by $bet dollars<<set $balance to $balance + $bet>><</if>>
+Your balance has increased by $bet dollars<<audio "win_sound" play>><<set $balance to $balance + $bet>><</if>>
 <<if $blackjack < $dealer>>Your cards are lower than the dealer's so you lose.
-Your balance has decreased by $bet dollars<<set $balance to $balance - $bet>><</if>>
+Your balance has decreased by $bet dollars<<audio "lose_sound" play>><<set $balance to $balance - $bet>><</if>>
 <<if $blackjack == $dealer>>Both you and the dealer have the same total.
 Your balance has not changed<</if>>
+You now have $balance dollars
+
 [[Next->Play Again?]]
 <</if>>
 <<if $dealer < 17>>
@@ -144,15 +151,19 @@ Your balance has not changed<</if>>
 <<set $dealer to $dealer + $hit>>
 The dealer has hit and now has $dealer
 <<if $dealer >= 22 && $dealer > 17>>The dealer has busted. You win!
-Your balance has increased by $bet dollars<<set $balance to $balance + $bet>>
+Your balance has increased by $bet dollars<<audio "win_sound" play>>
+You now have $balance dollars<<set $balance to $balance + $bet>>
+
 [[Next->Play Again?]]<</if>>
 <<if $dealer >= 17 && $dealer <= 21>>>
 <<if $blackjack > $dealer>>Your cards are higher than the dealer's so you win!
-Your balance has increased by $bet dollars<<set $balance to $balance + $bet>><</if>>
+Your balance has increased by $bet dollars<<audio "win_sound" play>><<set $balance to $balance + $bet>><</if>>
 <<if $blackjack < $dealer>>Your cards are lower than the dealer's so you lose.
-Your balance has decreased by $bet dollars<<set $balance to $balance - $bet>><</if>>
+Your balance has decreased by $bet dollars<<audio "lose_sound" play>><<set $balance to $balance - $bet>><</if>>
 <<if $blackjack == $dealer>>Both you and the dealer have the same total.
 Your balance has not changed<</if>>
+You now have $balance dollars
+
 [[Next->Play Again?]]
 <</if>>
 <<if $dealer < 17>>

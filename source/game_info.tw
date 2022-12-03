@@ -10,6 +10,8 @@
 Jackpot
 
 :: StoryInit
+<<cacheaudio "win_sound" "media/cha_ching.mp3">>
+<<cacheaudio "lose_sound" "media/aww.wav">>
 <<set $balance to 40000>>
 <<set $madAtManager to false>>
 <<set $deadbeat to false>>
