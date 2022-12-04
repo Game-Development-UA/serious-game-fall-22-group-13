@@ -17,7 +17,7 @@ Jackpot
 <<cacheaudio "edm" "media/edm_music.wav">>
 <<cacheaudio "hiphop" "media/hiphop_music.wav">>
 <<cacheaudio "jazz" "media/jazz_music.mp3">>
-<<cacheaudio "rap" "media/rap_music.wav">>
+<<cacheaudio "rap" "media/rap_music.mp3">>
 <<cacheaudio "rock" "media/rock_music.wav">>
 <<cacheaudio "metal" "media/metal_music.mp3">>
 <<cacheaudio "classical" "media/classical_music.wav">>

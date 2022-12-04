@@ -19,7 +19,7 @@ You'll show her. <i>You'll show everyone.</i>
 [[Mary watches you go.->SpouseStart]]
 
 :: Go To Casino
-<<audio ":all" stop>> <<if $gamecounter == 0>>You, $name, arrive at the casino. The argument is fresh in your mind, but you shove it away.<</if>><<if $genre is "country">>audio "country" loop play>><</if>><<if $genre is "pop">><<audio "pop" loop play>><</if>><<if $genre is "hip-hop">><<audio "hiphop" loop play>><</if>><<if $genre is "classical">><<audio "classical" loop play>><</if>><<if $genre is "rock">><<audio "rock" loop play>><</if>><<if $genre is "metal">><<audio "metal" loop play>><</if>><<if $genre is "EDM">><<audio "edm" loop play>><</if>><<if $genre is "rap">><<audio "rap" loop play>><</if>><<if $genre is "jazz">><<audio "jazz" loop play>><</if>>
+<<if $gamecounter == 0>>You, $name, arrive at the casino. The argument is fresh in your mind, but you shove it away.<<audio ":all" stop>><<if $genre is "country">><<audio "country" loop volume 0.8 play>><</if>><<if $genre is "pop">><<audio "pop" loop volume 0.8 play>><</if>><<if $genre is "hip-hop">><<audio "hiphop" loop volume 0.8 play>><</if>><<if $genre is "classical">><<audio "classical" loop volume 0.1 play>><</if>><<if $genre is "rock">><<audio "rock" loop volume 0.8 play>><</if>><<if $genre is "metal">><<audio "metal" loop volume 0.8 play>><</if>><<if $genre is "EDM">><<audio "edm" loop volume 0.8 play>><</if>><<if $genre is "rap">><<audio "rap" volume 0.8 loop play>><</if>><<if $genre is "jazz">><<audio "jazz" loop volume 0.8 play>><</if>><</if>>
 <em>Welcome to Cross County Casino! How much would you like to bet?</em>
 
 <<if $balance >= 100>>[[$100->Bet 100]]<</if>>
@@ -201,7 +201,7 @@ You now have $balance dollars
     Mary doesn't understand. She can't. <em>You</em> know how close you are. 
     Every spin, every play moves you just a little closer the prize just out of your reach. And right now, you think you're almost there.
 
-    She'll have to eat those words, when you win.
+    She'll have to eat those words when you win.
 
     You go in to play again.
 

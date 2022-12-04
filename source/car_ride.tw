@@ -28,22 +28,21 @@ The car is quite quiet with no one but you in it, and it's going to be a somewha
 
 :: Turn On Radio
 
-You reach to turn on the radio and $genre music starts playing.
+You reach to turn on the radio and $genre music starts playing.<<if $genre is "country">><<audio "country" loop volume 0.8 play>><</if>><<if $genre is "pop">><<audio "pop" loop volume 0.8 play>><</if>><<if $genre is "hip-hop">><<audio "hiphop" loop volume 0.8 play>><</if>><<if $genre is "classical">><<audio "classical" loop volume 0.1 play>><</if>><<if $genre is "rock">><<audio "rock" loop volume 0.8 play>><</if>><<if $genre is "metal">><<audio "metal" loop volume 0.8 play>><</if>><<if $genre is "EDM">><<audio "edm" loop volume 0.8 play>><</if>><<if $genre is "rap">><<audio "rap" volume 0.8 loop play>><</if>><<if $genre is "jazz">><<audio "jazz" loop volume 0.8 play>><</if>>
 
 [[Change the music->Change Radio Channel]]
 
 [[I love this song!->Continue Driving]]
 
 :: Change Radio Channel
-<<set $genre to $songSelection.random()>>
-You didn't like the previous channel's song selection, so you changed the channel and now $genre music starts playing.
+<<set $genre to $songSelection.random()>> <<audio ":all" stop>> <<if $genre is "country">><<audio "country" loop volume 0.8 play>><</if>><<if $genre is "pop">><<audio "pop" loop volume 0.8 play>><</if>><<if $genre is "hip-hop">><<audio "hiphop" loop volume 0.8 play>><</if>><<if $genre is "classical">><<audio "classical" loop volume 0.1 play>><</if>><<if $genre is "rock">><<audio "rock" loop volume 0.8 play>><</if>><<if $genre is "metal">><<audio "metal" loop volume 0.8 play>><</if>><<if $genre is "EDM">><<audio "edm" loop volume 0.8 play>><</if>><<if $genre is "rap">><<audio "rap" volume 0.8 loop play>><</if>><<if $genre is "jazz">><<audio "jazz" loop volume 0.8 play>><</if>> You didn't like the previous channel's song selection, so you changed the channel and now $genre music starts playing.
 
 [[Change it again->Change Radio Channel]]
 
 [[I love this song!->Continue Driving]]
 
 :: Continue Driving
-Now that you have some music playing in the background, the drive isn't so boring. You pass by a couple of exits before you look outside your window and see a brand new, flashing billboard.<<if $genre is "country">>audio "country" loop play>><</if>><<if $genre is "pop">><<audio "pop" loop play>><</if>><<if $genre is "hip-hop">><<audio "hiphop" loop play>><</if>><<if $genre is "classical">><<audio "classical" loop play>><</if>><<if $genre is "rock">><<audio "rock" loop play>><</if>><<if $genre is "metal">><<audio "metal" loop play>><</if>><<if $genre is "EDM">><<audio "edm" loop play>><</if>><<if $genre is "rap">><<audio "rap" loop play>><</if>><<if $genre is "jazz">><<audio "jazz" loop play>><</if>>
+Now that you have some music playing in the background, the drive isn't so boring. You pass by a couple of exits before you look outside your window and see a brand new, flashing billboard.
 
 [[I have to focus on the road!->Want To Look At Billboard]]
 
