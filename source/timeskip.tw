@@ -1,12 +1,8 @@
 :: Time Skip
-<<if $balance > 40000>>
-    <<set $balance to 3000>>
-    <<else>><<set $balance to 2500>>
-<</if>>
-It's been a year since you started going to the casino. You have gone there pretty much every weekend. You keep telling your wife that you will make enough for us to [[win it all back.->Argument]]
+<<audio ":all" stop>><<if $balance > 40000>><<set $balance to 3000>><<else>><<set $balance to 2500>><</if>>It's been a year since you started going to the casino. You have gone there pretty much every weekend. You keep telling your wife that you will make enough for us to [[win it all back.->Argument]]
 
 :: Argument
-"Honey, I keep telling you to stop going back there! It's hurting us more than helping!" Mary tells you. 
+"Honey, I keep telling you to stop going back there! It's hurting us more than helping!" Mary tells you. <<audio "sad" loop play>>
 
 You're on the defensive now. <i>She doesn't get it.</i>
 
@@ -23,7 +19,7 @@ You'll show her. <i>You'll show everyone.</i>
 [[Mary watches you go.->SpouseStart]]
 
 :: Go To Casino
-<<if $gamecounter == 0>>You, $name, arrive at the casino. The argument is fresh in your mind, but you shove it away.<</if>>
+<<audio ":all" stop>> <<if $gamecounter == 0>>You, $name, arrive at the casino. The argument is fresh in your mind, but you shove it away.<</if>><<if $genre is "country">>audio "country" loop play>><</if>><<if $genre is "pop">><<audio "pop" loop play>><</if>><<if $genre is "hip-hop">><<audio "hiphop" loop play>><</if>><<if $genre is "classical">><<audio "classical" loop play>><</if>><<if $genre is "rock">><<audio "rock" loop play>><</if>><<if $genre is "metal">><<audio "metal" loop play>><</if>><<if $genre is "EDM">><<audio "edm" loop play>><</if>><<if $genre is "rap">><<audio "rap" loop play>><</if>><<if $genre is "jazz">><<audio "jazz" loop play>><</if>>
 <em>Welcome to Cross County Casino! How much would you like to bet?</em>
 
 <<if $balance >= 100>>[[$100->Bet 100]]<</if>>
@@ -32,10 +28,7 @@ You'll show her. <i>You'll show everyone.</i>
 
 <<if $balance >= 500>>[[$500->Bet 500]]<</if>>
 
-
-
-<<if $gamecounter >= 3>>[[Leave.->Therapy End]]<</if>>
-
+<<if $gamecounter >= 3>>[[Leave->Therapy End]]<</if>>
 
 :: Bet 100
 <<set $bet to 100>>
@@ -174,7 +167,7 @@ You now have $balance dollars
 <</if>>
 
 :: Broke End
-    That's it. You're done. You bet against the house and you lost. 
+    That's it. You're done. You bet against the house and you lost.<<audio ":all" stop>>
 
     It's kind of a blur, whatever happens after that. You find yourself outside. The night air is freezing, even through your jacket.
 
@@ -185,7 +178,7 @@ You now have $balance dollars
     [[>>>-> Broke End 2]]
 
 :: Broke End 2
-    What do you do now? How can you face your family again? At the moment you can't even really bring yourself to care. 
+    What do you do now? How can you face your family again? At the moment you can't even really bring yourself to care.
     You've never felt so defeated. So hopeless.
 
     You tilt your head up to the sky, as if it has the answers hidden away somewhere. 
@@ -195,7 +188,7 @@ You now have $balance dollars
     [[>>>->End 1]]
 
 :: End 1
-    <strong>End 1: The Inevitable</strong> 
+    <strong>End 1: The Inevitable</strong>
 
             1/3
 
@@ -215,12 +208,12 @@ You now have $balance dollars
     [[>>>->End 2]]
 
 :: End 2
-    <strong>End 2: Replay</strong> 
+    <strong>End 2: Replay</strong> <<audio ":all" stop>>
 
             2/3
 
 :: Therapy End
-    You stop what you're doing. 
+    You stop what you're doing.
 
     What <i>are</i> you doing? You meant to check your bank account, but you accidentally opened one of those photo memories. Now you're just staring.
 
@@ -245,7 +238,7 @@ You now have $balance dollars
     [[>>>->End 3]]
 
 :: End 3
-<strong>End 3: Help</strong> 
+<strong>End 3: Help</strong><<audio ":all" stop>>
 
             3/3
 

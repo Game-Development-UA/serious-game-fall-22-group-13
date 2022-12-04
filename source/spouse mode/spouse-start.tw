@@ -60,7 +60,7 @@
     He went to the casino. Again.
     
     <<if $deadbeat>>
-    [["I can't <i>believe</i> you." | Argue]]
+    [["I can't believe you." | Argue]]
     <</if>>
     [["Welcome home." | Fake Calm]]
     [[Hand him a bowl. | Bowl]]

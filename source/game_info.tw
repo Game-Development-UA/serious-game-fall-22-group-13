@@ -13,6 +13,16 @@ Jackpot
 <<cacheaudio "clock" "media/clock.mp3">> 
 <<cacheaudio "win_sound" "media/cha_ching.mp3">>
 <<cacheaudio "lose_sound" "media/aww.wav">>
+<<cacheaudio "country" "media/country_music.mp3">>
+<<cacheaudio "edm" "media/edm_music.wav">>
+<<cacheaudio "hiphop" "media/hiphop_music.wav">>
+<<cacheaudio "jazz" "media/jazz_music.mp3">>
+<<cacheaudio "rap" "media/rap_music.wav">>
+<<cacheaudio "rock" "media/rock_music.wav">>
+<<cacheaudio "metal" "media/metal_music.mp3">>
+<<cacheaudio "classical" "media/classical_music.wav">>
+<<cacheaudio "pop" "media/pop_music.wav">>
+<<cacheaudio "sad" "media/sad_music.mp3">>
 <<set $balance to 40000>>
 <<set $madAtManager to false>>
 <<set $deadbeat to false>>

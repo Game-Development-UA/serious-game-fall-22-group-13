@@ -1,5 +1,5 @@
 :: Go To Car
-You leave your house, closing and locking the door behind you. You take a couple seconds to look for where the car was last parked because your wife is the one that usually takes the car, but she always makes sure it's available for you to pick up your son.
+<<audio ":all" stop>>You leave your house, closing and locking the door behind you. You take a couple seconds to look for where the car was last parked because your wife is the one that usually takes the car, but she always makes sure it's available for you to pick up your son.
 
 How thoughtful.
 
@@ -43,7 +43,7 @@ You didn't like the previous channel's song selection, so you changed the channe
 [[I love this song!->Continue Driving]]
 
 :: Continue Driving
-Now that you have some music playing in the background, the drive isn't so boring. You pass by a couple of exits before you look outside your window and see a brand new, flashing billboard.
+Now that you have some music playing in the background, the drive isn't so boring. You pass by a couple of exits before you look outside your window and see a brand new, flashing billboard.<<if $genre is "country">>audio "country" loop play>><</if>><<if $genre is "pop">><<audio "pop" loop play>><</if>><<if $genre is "hip-hop">><<audio "hiphop" loop play>><</if>><<if $genre is "classical">><<audio "classical" loop play>><</if>><<if $genre is "rock">><<audio "rock" loop play>><</if>><<if $genre is "metal">><<audio "metal" loop play>><</if>><<if $genre is "EDM">><<audio "edm" loop play>><</if>><<if $genre is "rap">><<audio "rap" loop play>><</if>><<if $genre is "jazz">><<audio "jazz" loop play>><</if>>
 
 [[I have to focus on the road!->Want To Look At Billboard]]
 
