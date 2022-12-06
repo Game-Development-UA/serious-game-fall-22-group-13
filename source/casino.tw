@@ -27,13 +27,13 @@ So what will your pick be? [[Red->Guess Red]] or [[Black->Guess Black]]
 
 :: Guess Red
 <img src="media/roullete.gif">
-<<if $roulette % 2 is 0>>You guessed right and win!<<audio "win_sound" play>><</if>>
+<<if $roulette % 2 is 0>>You guessed right and win!<<audio "win_sound" play>><<set $wonfirst to true>><</if>>
 <<if $roulette % 2 is 1>> You guessed wrong and lose<<audio "lose_sound" play>><</if>>
 [[Next->After Roulette]]
 
 :: Guess Black
 <img src="media/roullete.gif">
-<<if $roulette % 2 is 1>>You guessed right and win!<<audio "win_sound" play>><</if>>
+<<if $roulette % 2 is 1>>You guessed right and win!<<audio "win_sound" play>><<set $wonfirst to true>><</if>>
 <<if $roulette % 2 is 0>> You guessed wrong and lose<<audio "lose_sound" play>><</if>>
 
 [[Next->After Roulette]]
@@ -46,7 +46,7 @@ Wow, would you look at the time, it looks like it's getting [[late.->Head Home]]
 :: Head Home
 "Man that was fun, we should do this more often!" you tell Anat.
 
-"It was alright, I guess man. I'm not a big fan of gambling honestly." he replies.
+"It was alright, I guess. I'm not a big fan of gambling, honestly." he shrugs.
 
 "To each his own I guess, wanna join us for dinner tonight?" you ask.
 
@@ -61,14 +61,19 @@ Wow, would you look at the time, it looks like it's getting [[late.->Head Home]]
 
 "Welcome back, honey. You're just in time for dinner." Mary replies.
 
-"Great, [[I'm starving->Dinner Table]], sorry I couldn't help you out with dinner tonight."
+"Great, [[I'm starving->Dinner Table]]! sorry I couldn't help you out with dinner tonight."
 
 :: Dinner Table [dinner]
 <img src="media/dinner.jpg">
-"... and then I played some Roulette and I won so much money off of it, it was amazing!" you say at the dinner table.
+<<if $wonfirst>>
+    "...and then I played some roulette and I won some money off of it. It was amazing!" you say at the dinner table. Jack looks fascinated with your stories of the cool money machines.
 
-"Wow, congratulations that's a lot of money." Mary replies.
+    "Wow, congratulations. That's a lot of money," Mary replies. For a second, she doesn't look quite as enthusiastic as she sounds. You blink, and her expression is back to normal. 
 
-"Now we can live a bit more luxuriously." you jokingly say.
+    "Now we can live a bit more luxuriously." you jokingly say.
+    <<else>>"Oh, you'll get 'em next time," Mary laughs. You've just finished telling the table of your shameful deafeat at the hands of the roulette wheel. Jack is laser-focused on his meal, but you know that he'll have plenty of questions to ask later as well.
+
+            "That's the plan," you say, laughing along with her. You lost this time, but you know that you were so close!
+<</if>>
 
 <em>I think I'm going to head there [[next weekend->Time Skip]] to win some more money!</em>
